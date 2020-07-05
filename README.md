@@ -35,16 +35,8 @@ There is a sample entity called `sample` which should work fully that you can re
 
 #### Steps
 
-1. cd into `frontend`
-2. Run `yarn install` to install all the packages.
-3. To start the frontend, run `yarn start`
+1. cd into `client`
+2. Run `yarn install` or `npm install` to install all the packages.
+3. To start the client, run `yarn start:local` the API endpoints point to `localhost:4004/graphql`
+4. Open browser to `localhost:3000`
 
-### Structure
-
-Inside of the `src` folder you will find three directories:
-
-- `components` - Home to React components
-- `contexts` - Contains React contexts and GraphQL
-- `hooks` - House the useApolloClient hook
-
-There is a sample component called `sample` which reflects the backend entity of the same name.
