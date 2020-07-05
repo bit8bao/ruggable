@@ -11,7 +11,7 @@ Please also run `npm i` under a subfolder called `mock-server` to get `node_modu
 ### `yarn start:mock`
 
 Runs the app in the development mode and mock server<br /> <br />
-Mock Server [http://localhost:1234](http://localhost:1234) for mocking API endpoints with json data. You can test request [http://localhost:1234/api/tandem/get-1234](http://localhost:1234/api/tandem/get-1234) <br /><br />
+Mock Server [http://localhost:1234](http://localhost:1234) for mocking API endpoints with json data.  <br /><br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.<br />
