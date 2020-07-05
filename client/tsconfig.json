@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "noImplicitReturns": true,
+    "strictNullChecks": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "alwaysStrict": true,
+    "strictFunctionTypes": false,
+    "strictPropertyInitialization": false,
+    "strictBindCallApply": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "target": "es5",
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "noEmit": true,
+    "downlevelIteration": true,
+    "jsx": "preserve",
+    "lib": ["es2015", "es2017", "dom"],
+    "isolatedModules": true,
+    "baseUrl": "src"
+  },
+  "include": ["src"]
+}

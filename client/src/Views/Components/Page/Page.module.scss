@@ -1,0 +1,28 @@
+@import '../../../assets/scss/config';
+
+.wrapper {
+  padding: 25px 50px !important;
+  min-height: 600px;
+
+  @include breakpoint(SM) {
+    padding: 10px !important;
+  }
+}
+
+.titleWrapper {
+  align-items: flex-end;
+  display: flex;
+}
+
+.title {
+  align-items: center;
+  display: flex;
+}
+
+.titleIcon {
+  margin-right: 8px;
+}
+
+.subtitle {
+  max-width: 1080px;
+}

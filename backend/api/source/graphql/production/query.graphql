@@ -1,0 +1,5 @@
+extend type Query {
+  production(id: ID!): Production
+  productionByCity(city_id: String): [Production!]!
+  productions(offset: Int, limit: Int): [Production!]!
+}

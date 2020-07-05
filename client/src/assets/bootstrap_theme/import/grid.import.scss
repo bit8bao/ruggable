@@ -1,0 +1,68 @@
+@import './mixins/index';
+
+.divide_1 {
+  @include divide_1();
+}
+.divide_2 {
+  @include divide_2();
+}
+.divide_3 {
+  @include divide_3();
+}
+.divide_4 {
+  @include divide_4();
+}
+.divide_5 {
+  @include divide_5();
+}
+.divide_6 {
+  @include divide_6();
+}
+.divide_7 {
+  @include divide_7();
+}
+.divide_8 {
+  @include divide_8();
+}
+.divide_9 {
+  @include divide_9();
+}
+.divide_10 {
+  @include divide_10();
+}
+.divide_11 {
+  @include divide_11();
+}
+.divide_12 {
+  @include divide_12();
+}
+
+.bc-gray {
+  border-color: $grey-700;
+}
+
+.no-gutter.row,
+.no-gutter .row {
+  margin-left: 0;
+  margin-right: 0;
+
+  & > form > [class^='col-md'],
+  & > [class^='col-md'] {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width: $tablet-breakpoint) {
+  .cols-same-height.row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .cols-same-height.row > [class*='col-'] {
+    display: flex;
+    flex-direction: column;
+  }
+}

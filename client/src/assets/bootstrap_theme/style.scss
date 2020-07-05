@@ -1,0 +1,39 @@
+@import 'import/index';
+@import 'dateTimePicker';
+@import 'filterList';
+@import 'statusPill';
+@import 'largeStatusIcon';
+@import 'tabHeader';
+@import 'headerTable';
+@import 'breadcrumb';
+@import 'emptyTableMessage';
+@import 'operationDetail';
+@import '../scss/config';
+
+.jqstooltip {
+  padding: 5px !important;
+  border: none !important;
+  border-radius: 10px;
+  background-color: $orange-500 !important;
+  width: auto !important;
+  height: auto !important;
+}
+
+.hoverinfo {
+  // background-color: $green-500 !important;
+  background-color: $grey-500;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5) !important;
+  border: none !important;
+  border-radius: 4px !important;
+  color: $white !important;
+  // padding: 6px 12px !important;
+  padding: 8px;
+}
+
+#js-reactApp #razor input {
+  background-color: $grey-600;
+}
+
+#js-reactApp #razor .container-fluid {
+  padding: 0 100px;
+}

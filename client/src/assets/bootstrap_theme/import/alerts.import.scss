@@ -1,0 +1,82 @@
+@import '../../scss/config';
+
+.alert-success {
+  color: $white;
+  border-color: $green-500;
+  background-color: $green-500;
+
+  .alert-link {
+    color: $green-500;
+  }
+}
+
+.alert-warning {
+  color: $white;
+  border-color: $orange-500;
+  background-color: $orange-500;
+
+  .alert-link {
+    color: $orange-500;
+  }
+}
+
+.alert-info {
+  color: $white;
+  border-color: $orange-500;
+  background-color: $orange-500;
+
+  .alert-link {
+    color: $orange-500;
+  }
+}
+
+.alert-danger {
+  color: $white;
+  border-color: $red-500;
+  background-color: $red-500;
+
+  .alert-link {
+    color: $red-500;
+  }
+}
+
+.toast-success {
+  color: $white;
+  border-color: $green-500;
+  background-color: $green-500;
+}
+
+.toast-warning {
+  color: $white;
+  border-color: $orange-500;
+  background-color: $orange-500;
+}
+
+.toast-info {
+  color: $white;
+  border-color: $orange-500;
+  background-color: $orange-500;
+}
+
+.toast-error {
+  color: $white;
+  border-color: $red-500;
+  background-color: $red-500;
+}
+
+#toast-container > div {
+  opacity: 1;
+  margin-top: 20px;
+  border-radius: 4px;
+  padding: 20px 20px 20px 50px;
+
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+
+  &:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+  }
+}
+
+#toast-container.toast-top-right > div {
+  margin-top: 60px;
+}

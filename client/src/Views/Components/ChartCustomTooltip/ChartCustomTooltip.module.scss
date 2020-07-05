@@ -1,0 +1,12 @@
+@import '../../../assets/scss/config';
+
+.wrapper {
+  align-items: center;
+  background-color: $grey-400;
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: $base-vertical-rhythm * 2 $base-vertical-rhythm;
+  text-align: center;
+}

@@ -1,0 +1,3 @@
+extend type Mutation{
+    createOrder(input: InputCreateOrder) : Order!
+}

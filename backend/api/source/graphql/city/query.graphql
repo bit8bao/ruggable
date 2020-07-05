@@ -1,0 +1,4 @@
+extend type Query {
+  city(id: ID!): City
+  cities(offset: Int, limit: Int): [City!]!
+}

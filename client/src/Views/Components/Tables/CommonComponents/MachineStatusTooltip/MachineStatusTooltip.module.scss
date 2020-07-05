@@ -1,0 +1,66 @@
+@import '../../../../../assets/scss/config';
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  height: 100%;
+  cursor: pointer;
+}
+
+.container {
+  display: none;
+  position: absolute;
+  z-index: 0;
+  top: -3em;
+  width: 100px;
+  pointer-events: none;
+}
+
+.wrapper:hover > .container {
+  display: block;
+}
+
+.text {
+  font-weight: bold;
+  font-size: font-size($font-size-x-small);
+  background: $grey-400;
+  padding: 0.25rem 1rem;
+  text-transform: uppercase;
+}
+
+.text:before,
+.text:after {
+  display: block;
+  content: '';
+  position: absolute;
+  z-index: -100;
+  width: 50%;
+  top: 0;
+  bottom: 0;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.26);
+}
+
+.text:before {
+  left: 0;
+  border-bottom-right-radius: 1rem;
+}
+
+.text:after {
+  right: 0;
+  border-bottom-left-radius: 1rem;
+}
+
+.tip {
+  position: absolute;
+  z-index: -100;
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  background: $grey-400;
+  left: 50%;
+  bottom: -0.5rem;
+  transform: translateX(-50%) rotate(45deg);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.26);
+}

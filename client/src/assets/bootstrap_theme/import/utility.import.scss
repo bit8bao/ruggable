@@ -1,0 +1,63 @@
+@import '../import/mixins/index';
+
+.set-width_px_56 {
+  @include set-width_px_56();
+}
+.set-width_px_16 {
+  @include set-width_px_16();
+}
+.set-height_px_48 {
+  @include set-height_px_48();
+}
+.set-width_px_80 {
+  @include set-width_px_80();
+}
+.set-width_px_100 {
+  @include set-width_px_100();
+}
+.set-width_px_120 {
+  @include set-width_px_120();
+}
+.set-width_px_160 {
+  @include set-width_px_160();
+}
+.set-width_px_240 {
+  @include set-width_px_240();
+}
+
+.vr_colMd_1 {
+  @include vr_colMd_1();
+}
+.vr_colMd_2 {
+  @include vr_colMd_2();
+}
+.vr_colMd_3 {
+  @include vr_colMd_3();
+}
+.vr_colMd_4 {
+  @include vr_colMd_4();
+}
+.vr_colMd_5 {
+  @include vr_colMd_5();
+}
+.vr_colMd_6 {
+  @include vr_colMd_6();
+}
+.vr_colMd_7 {
+  @include vr_colMd_7();
+}
+.vr_colMd_8 {
+  @include vr_colMd_8();
+}
+.vr_colMd_9 {
+  @include vr_colMd_9();
+}
+.vr_colMd_10 {
+  @include vr_colMd_10();
+}
+.vr_colMd_11 {
+  @include vr_colMd_11();
+}
+.vr_colMd_12 {
+  @include vr_colMd_12();
+}

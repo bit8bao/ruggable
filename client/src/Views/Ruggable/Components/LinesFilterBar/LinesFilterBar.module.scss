@@ -1,0 +1,7 @@
+@import '../../../../assets/scss/config';
+@import '../../../../assets/bootstrap_theme/import/mixins/index';
+
+.machineFilterHorizontal {
+  @include padding_horizontal_right(5);
+  @include padding_horizontal_left(1);
+}

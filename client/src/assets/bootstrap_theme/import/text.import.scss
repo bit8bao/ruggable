@@ -1,0 +1,37 @@
+@import '../../scss/config';
+
+.text-muted {
+  color: darken($white, 5%);
+}
+
+.text-accent {
+  color: $green-500;
+}
+
+.text-hover {
+  color: $green-400;
+}
+
+.text-primary {
+  color: $green-500;
+}
+
+.text-success {
+  color: $green-500;
+}
+
+.text-info {
+  color: $orange-500;
+}
+
+.text-warning {
+  color: $orange-500;
+}
+
+.text-danger {
+  color: $red-500;
+}
+
+.text-border {
+  color: $grey-500;
+}

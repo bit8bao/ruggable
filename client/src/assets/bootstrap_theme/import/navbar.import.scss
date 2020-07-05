@@ -1,0 +1,235 @@
+@import './variables/index';
+@import '../../scss/config';
+
+$navbar-breakpoint: 968px;
+
+.navbar {
+  min-height: 60px;
+}
+
+.navbar-default .navbar-brand,
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:hover {
+  font-size: 26px;
+  font-weight: 300;
+  color: $white;
+  width: $navigation-width;
+  background-color: $grey-600;
+  height: 60px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:active {
+  color: $green-400;
+}
+
+.navbar-brand {
+  text-transform: none;
+
+  > img {
+    //height: 40px;
+  }
+}
+
+.navbar-default {
+  border-bottom: none;
+  background-color: $grey-500;
+}
+
+.left-nav-toggle {
+  float: left;
+  padding: $base-vertical-rhythm * 1.75 8px $base-vertical-rhythm * 1.75 $base-vertical-rhythm * 3;
+
+  &:hover a {
+    color: $green-400;
+  }
+}
+
+.left-nav-toggle a {
+  font-size: $base-vertical-rhythm * 3;
+  line-height: $base-vertical-rhythm * 4;
+  color: $grey-200;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: $grey-200;
+}
+
+.left-nav-toggle a:hover,
+.left-nav-toggle a:focus {
+  text-decoration: none;
+}
+
+.navbar-form {
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-right: 0;
+  margin: 0;
+  min-width: 30%;
+  display: flex;
+  flex-direction: row-reverse;
+
+  &.site-header-form {
+    width: calc(100% - 502px); // 264px .profil-link + 185px .navbar-header + 53px @mixin left-nav-toggle
+    @media (max-width: $navbar-breakpoint) {
+      width: calc(100% - 343px); // 105px .profil-link + 185px .navbar-header + 53px .left-nav-toggle
+    }
+  }
+}
+
+.navbar-form input.form-control {
+  border: none;
+  box-shadow: none;
+  color: $white;
+  min-width: calc(100% - #{$base-vertical-rhythm} * 8);
+  border-left: 2px solid $grey-600;
+}
+
+.navbar-form input.form-control::-webkit-input-placeholder {
+  color: $grey-200;
+}
+
+.navbar-form input.form-control:-moz-placeholder {
+  color: $grey-200;
+}
+
+.navbar-form input.form-control::-moz-placeholder {
+  color: $grey-200;
+}
+
+.navbar-form input.form-control:-ms-input-placeholder {
+  color: $grey-200;
+}
+
+.navbar-form button,
+.profil-link button {
+  border: none;
+  padding: 0;
+  background: transparent;
+  display: inline;
+  vertical-align: middle;
+  color: $grey-200;
+
+  & i {
+    padding: $base-vertical-rhythm $base-vertical-rhythm * 2;
+    font-size: 16px;
+  }
+
+  &:hover {
+    color: $green-400;
+  }
+}
+
+.navbar-default .navbar-nav li > a:focus,
+.navbar-default .navbar-nav li > a:hover {
+  color: $green-400;
+  text-decoration-line: none;
+}
+
+.navbar-nav li > a,
+.navbar-nav li button {
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.navbar-nav > li:first-child > a {
+  padding: $base-vertical-rhythm * 2.75 $base-vertical-rhythm * 4;
+  padding-left: 0;
+}
+
+.navbar-nav > li:last-child > a {
+  padding: 10px 25px 10px 15px;
+}
+
+.navbar-nav.navbar-right a .label {
+  margin: -5px 0 0 5px;
+}
+
+.profil-link {
+  padding: 0 $base-vertical-rhythm * 2 0 $base-vertical-rhythm * 3;
+  background: $grey-600;
+  width: 264px;
+  max-height: 60px;
+}
+
+.profil-link ul {
+  padding: $base-vertical-rhythm 0;
+  text-align: right;
+  width: 64%;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .navbar-nav.navbar-right a .label {
+    position: absolute;
+    margin-top: -5px;
+  }
+
+  .profil-link ul {
+    padding: $base-vertical-rhythm / 2 0;
+  }
+}
+
+.profil-link li {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.profil-link i {
+  padding: 14px 0;
+  vertical-align: top;
+  font-size: 32px;
+}
+
+@media (max-width: $navbar-breakpoint) {
+  .profil-link {
+    width: auto;
+    padding: 0 $base-vertical-rhythm;
+    max-width: 106px;
+
+    & i {
+      display: none;
+    }
+
+    & li {
+      width: auto;
+    }
+
+    .hr_2 {
+      margin: 0;
+    }
+
+    & ul {
+      width: 75%;
+    }
+  }
+}
+
+.profil-link .profile-address {
+  text-transform: lowercase;
+}
+
+#mobile-menu {
+  display: none;
+}
+
+@media (max-width: $mobile-breakpoint) {
+  #mobile-menu {
+    display: block;
+  }
+}
+
+#mobile-menu {
+  float: right;
+
+  .left-nav-toggle {
+    padding-right: 25px;
+  }
+}

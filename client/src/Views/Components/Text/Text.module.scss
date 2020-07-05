@@ -1,0 +1,131 @@
+@import '../../../assets/scss/config';
+
+.wrapper {
+  margin: 0;
+  padding: 0;
+}
+
+// The parent element needs "overflow: hidden;" for this to work.
+.ellipsis {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.isUppercase {
+  text-transform: uppercase;
+}
+
+/* ----------------------------------------------------------------------
+ Titles
+---------------------------------------------------------------------- */
+.title1 {
+  color: $grey-900;
+  font-size: font-size($font-size-xxx-large);
+  font-weight: $font-weight-light;
+}
+
+.title2 {
+  color: $grey-900;
+  font-size: font-size($font-size-xx-large);
+  font-weight: $font-weight-regular;
+}
+
+.title3 {
+  color: $grey-700;
+  font-size: font-size($font-size-x-large);
+  font-weight: $font-weight-bold;
+}
+
+.headline {
+  color: $grey-900;
+  font-size: font-size($font-size-large);
+  font-weight: $font-weight-regular;
+}
+
+.headline2 {
+  color: $grey-700;
+  font-size: font-size($font-size-large);
+  font-weight: $font-weight-regular;
+}
+
+.subhead {
+  color: $grey-700;
+  font-size: font-size($font-size-regular);
+  font-weight: $font-weight-regular;
+}
+
+.table {
+  color: $grey-900;
+  font-size: font-size($font-size-regular);
+  font-weight: $font-weight-regular;
+}
+
+.tableHeader {
+  color: $grey-700;
+  font-size: font-size($font-size-x-small);
+  font-weight: $font-weight-regular;
+}
+
+/* ----------------------------------------------------------------------
+ Body
+---------------------------------------------------------------------- */
+.body1 {
+  @include bodyText1();
+}
+
+/* ----------------------------------------------------------------------
+ Callout
+---------------------------------------------------------------------- */
+.callout {
+  color: $white;
+  font-size: font-size($font-size-x-small);
+  font-weight: $font-weight-regular;
+}
+
+.calloutLarge {
+  font-size: font-size($font-size-super-large);
+  font-weight: $font-weight-regular;
+  line-height: font-size($font-size-super-large);
+}
+
+/* ----------------------------------------------------------------------
+ Footnote
+---------------------------------------------------------------------- */
+.footnote1 {
+  color: $grey-200;
+  font-size: font-size($font-size-small);
+  font-weight: $font-weight-regular;
+}
+
+.footnote2 {
+  color: $white;
+  font-size: font-size($font-size-small);
+  font-weight: $font-weight-regular;
+}
+
+/* ----------------------------------------------------------------------
+ Captions
+---------------------------------------------------------------------- */
+.caption1 {
+  color: $grey-200;
+  font-size: font-size($font-size-x-small);
+  font-weight: $font-weight-bold;
+}
+
+.caption2 {
+  color: $white;
+  font-size: font-size($font-size-x-small);
+  font-weight: $font-weight-bold;
+}
+
+/* ----------------------------------------------------------------------
+ Instructions
+---------------------------------------------------------------------- */
+.instruction1 {
+  color: $grey-300;
+  font-size: font-size($font-size-x-small);
+  font-weight: $font-weight-regular;
+  font-style: italic;
+}

@@ -1,0 +1,9 @@
+@import '../import/mixins/index';
+
+.list-inline_alnMiddle > li {
+  vertical-align: middle;
+}
+
+.list-indent_15 {
+  padding-left: 15px;
+}

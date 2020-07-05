@@ -1,0 +1,39 @@
+@import '../../../scss/config';
+
+@mixin typography-variant($font-size, $font-weight, $color) {
+  font-size: $font-size;
+  font-weight: $font-weight;
+  color: $color;
+}
+
+@mixin caption1() {
+  @include typography-variant(12px, 400, $grey-200);
+}
+
+@mixin caption2() {
+  @include typography-variant(12px, 400, $white);
+  text-transform: uppercase;
+}
+
+@mixin bodyText() {
+  @include typography-variant(16px, 300, $white);
+}
+
+@mixin footnote() {
+  @include typography-variant(14px, 400, $grey-200);
+}
+
+@mixin callout() {
+  @include typography-variant(16px, 400, $white);
+  text-transform: uppercase;
+}
+
+@mixin txt-ellipsis() {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+@mixin txt-italic() {
+  text-decoration: italic;
+}

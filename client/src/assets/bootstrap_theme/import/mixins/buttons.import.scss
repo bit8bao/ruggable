@@ -1,0 +1,64 @@
+@mixin button-variant(
+  $static-text-color,
+  $hover-text-color,
+  $active-text-color,
+  $static-border-color,
+  $hover-border-color,
+  $active-border-color,
+  $static-bg-color,
+  $hover-bg-color,
+  $active-bg-color
+) {
+  color: $static-text-color;
+  border-color: $static-border-color;
+  background-color: $static-bg-color;
+
+  &.valid,
+  &:hover,
+  &:focus,
+  &.focus {
+    color: $hover-text-color;
+    border-color: $hover-border-color;
+    background-color: $hover-bg-color;
+    outline: 0;
+    box-shadow: none;
+  }
+  &:active,
+  &.active,
+  .open > .dropdown-toggle & {
+    color: $active-text-color;
+    border-color: $active-border-color;
+    background-color: $active-bg-color;
+
+    &.valid,
+    &:hover,
+    &:focus,
+    &.focus {
+      color: $hover-text-color;
+      border-color: $hover-border-color;
+      background-color: $hover-bg-color;
+      outline: 0;
+      box-shadow: none;
+    }
+  }
+  &:active,
+  &.active,
+  .open > .dropdown-toggle & {
+    background-image: none;
+  }
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &:hover,
+    &:focus,
+    &.focus {
+      border-color: $static-border-color;
+      background-color: $static-bg-color;
+    }
+  }
+
+  .badge {
+    color: $static-text-color;
+    background-color: $static-bg-color;
+  }
+}

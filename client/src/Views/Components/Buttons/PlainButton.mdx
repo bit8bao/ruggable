@@ -1,0 +1,45 @@
+---
+name: PlainButton
+menu: Buttons
+---
+
+import { Playground, Props } from 'docz';
+import Button, { ButtonStyleEnum } from './Button';
+
+# Plain Button
+
+## Properties
+
+<Props of={Button} />
+
+## Plain Default
+
+<Playground style={{ backgroundColor: '#2d3136', padding: '20px' }}>
+  <Button displayType={ButtonStyleEnum.Plain} onClick={() => alert('I was clicked')}>
+    Click me
+  </Button>
+</Playground>
+
+## Plain Active
+
+<Playground style={{ backgroundColor: '#2d3136', padding: '20px' }}>
+  <Button displayType={ButtonStyleEnum.Plain} isActive={true}>
+    Click me
+  </Button>
+</Playground>
+
+## Plain Form Submit
+
+<Playground style={{ backgroundColor: '#2d3136', padding: '20px' }}>
+  <Button displayType={ButtonStyleEnum.Plain} type="submit">
+    Click me
+  </Button>
+</Playground>
+
+## Plain Disabled
+
+<Playground style={{ backgroundColor: '#2d3136', padding: '20px' }}>
+  <Button displayType={ButtonStyleEnum.Plain} disabled={true}>
+    Click me
+  </Button>
+</Playground>

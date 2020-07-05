@@ -1,0 +1,120 @@
+@import '../mixins/index';
+@import '../../../scss/config';
+
+.support-desktop {
+  display: none;
+
+  .support-question {
+    padding: 13px;
+    background-color: transparent;
+    font-weight: 400;
+
+    &:hover {
+      a {
+        color: $white;
+      }
+    }
+
+    &.active {
+      background-color: $grey-600;
+
+      a {
+        color: $green-400;
+      }
+
+      .panel-body {
+        background-color: $grey-600;
+      }
+    }
+  }
+
+  .support-panel {
+    background-color: $grey-600;
+    padding: $base-vertical-rhythm * 2;
+
+    img {
+      margin: $base-vertical-rhythm * 2 0;
+    }
+  }
+}
+
+.support-mobile {
+  display: block;
+
+  .panel-collapse.panel {
+    background-color: transparent;
+  }
+
+  .panel {
+    background-color: $grey-600;
+    margin-bottom: $base-vertical-rhythm * 2;
+    font-size: 16px;
+
+    .panel-heading,
+    .panel-body {
+      padding: $base-vertical-rhythm * 2;
+    }
+  }
+
+  .panel-heading {
+    @include callout();
+    color: $green-400;
+
+    a {
+      color: $green-400;
+    }
+  }
+
+  .panel-collapse .panel-heading {
+    color: $grey-200;
+
+    a {
+      color: $grey-200;
+
+      &:hover {
+        color: $white;
+      }
+    }
+
+    &:hover {
+      color: $white;
+    }
+  }
+}
+
+@media (min-width: $tablet-breakpoint) {
+  .support-desktop {
+    display: block;
+  }
+  .support-mobile {
+    display: none;
+  }
+}
+
+.support-numbered-list {
+  list-style: none;
+  counter-reset: support-numbered-list;
+  font-size: 16px;
+  color: $white;
+
+  li {
+    counter-increment: support-numbered-list;
+    position: relative;
+    @include footnote();
+    margin-bottom: $base-vertical-rhythm;
+    color: $white;
+  }
+
+  li::before {
+    content: counter(support-numbered-list);
+    position: absolute;
+    left: -30px;
+    top: -2px;
+    color: $grey-900;
+    background-color: $orange-500;
+    border: 2px solid $orange-500;
+    text-align: center;
+    width: 24px;
+    border-radius: 16px;
+  }
+}

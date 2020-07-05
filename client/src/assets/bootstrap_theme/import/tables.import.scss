@@ -1,0 +1,212 @@
+@import './mixins/index';
+@import '../../scss/config';
+
+.table {
+  table-layout: fixed;
+
+  .table {
+    background-color: transparent;
+  }
+}
+
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td {
+  &.no-hor-padding {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-top: 1px solid $grey-500;
+}
+
+.table-borderless > thead > tr > th,
+.table-borderless > tbody > tr > th,
+.table-borderless > tfoot > tr > th,
+.table-borderless > thead > tr > td,
+.table-borderless > tbody > tr > td,
+.table-borderless > tfoot > tr > td {
+  border-top-color: transparent;
+}
+
+.table > thead > tr > th {
+  border-top: none;
+  border-bottom: none;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: rgba(red($grey-600), green($grey-600), blue($grey-600), 0.5);
+}
+
+.table > thead > tr > td.active,
+.table > tbody > tr > td.active,
+.table > tfoot > tr > td.active,
+.table > thead > tr > th.active,
+.table > tbody > tr > th.active,
+.table > tfoot > tr > th.active,
+.table > thead > tr.active > td,
+.table > tbody > tr.active > td,
+.table > tfoot > tr.active > td,
+.table > thead > tr.active > th,
+.table > tbody > tr.active > th,
+.table > tfoot > tr.active > th {
+  background-color: lighten($grey-600, 2%);
+}
+
+.table-hover > tbody > tr {
+  border-left: 2px solid transparent;
+
+  & > * {
+    // word-break: break-all;
+    &:first-child {
+      width: $base-vertical-rhythm * 7;
+      // word-break: normal;
+    }
+  }
+}
+
+.table-hover > tbody > tr:hover {
+  background-color: $grey-700;
+  border-color: $green-400;
+}
+
+.table-bordered,
+.table-bordered > thead > tr > th,
+.table-bordered > tbody > tr > th,
+.table-bordered > tfoot > tr > th,
+.table-bordered > thead > tr > td,
+.table-bordered > tbody > tr > td,
+.table-bordered > tfoot > tr > td {
+  border-color: $grey-500;
+}
+
+.table-noPadding > tbody > tr > td,
+.table-noPadding > tbody > tr > th,
+.table-noPadding > tfoot > tr > td,
+.table-noPadding > tfoot > tr > th,
+.table-noPadding > thead > tr > td,
+.table-noPadding > thead > tr > th {
+  padding: 0px;
+}
+
+.panel-filled {
+  .table > thead > tr > th,
+  .table > tbody > tr > th,
+  .table > tfoot > tr > th,
+  .table > thead > tr > td,
+  .table > tbody > tr > td,
+  .table > tfoot > tr > td {
+    border-color: lighten($grey-500, 5%);
+  }
+
+  .table-bordered,
+  .table-bordered > thead > tr > th,
+  .table-bordered > tbody > tr > th,
+  .table-bordered > tfoot > tr > th,
+  .table-bordered > thead > tr > td,
+  .table-bordered > tbody > tr > td,
+  .table-bordered > tfoot > tr > td {
+    border-color: lighten($grey-500, 5%);
+  }
+
+  .table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: $grey-600;
+  }
+
+  .table-hover > tbody > tr:hover {
+    background-color: lighten($grey-600, 2%);
+  }
+}
+
+th {
+  @include caption1();
+}
+
+.table > tbody > tr > td {
+  @include bodyText();
+}
+
+.table > tbody > tr > td a,
+.table > tbody > tr > td button {
+  @include bodyText();
+  color: $white;
+
+  &:hover {
+    text-decoration: none;
+    color: $green-400;
+  }
+
+  &.table-icon-link {
+    width: 39px;
+    border-left: 1px solid $grey-500;
+    display: inline-block;
+    text-align: center;
+
+    &:first-child {
+      width: 40px;
+      border-left: none;
+    }
+  }
+
+  &.table-btn-icon-link {
+    width: 39px;
+    border-left: 1px solid $grey-500;
+    color: $white;
+    padding: 0;
+
+    &:hover {
+      color: $green-400;
+    }
+
+    &:first-child {
+      width: 40px;
+      border-left: none;
+    }
+  }
+}
+
+// Generate the contextual variants
+@include table-row-variant(success, $green-500);
+@include table-row-variant(info, $orange-500);
+@include table-row-variant(warning, $orange-500);
+@include table-row-variant(danger, $red-500);
+
+// DataTables copy info
+
+div.dt-button-info {
+  background-color: darken($grey-700, 6%);
+  border-radius: 6px;
+  border: none;
+
+  h2 {
+    background-color: transparent;
+    border-color: $grey-500;
+  }
+}
+
+.table-responsive {
+  border-color: lighten($grey-500, 5%) !important;
+}
+
+// Align
+.table.table-vertical-align-top tbody > tr > td {
+  vertical-align: top;
+}
+
+.table.table-vertical-align-middle tbody > tr > td,
+.table.table-vertical-align-middle tbody > tr > td.vertical-align-middle {
+  vertical-align: middle;
+}
+
+.table.table-vertical-align-bottom tbody > tr > td {
+  vertical-align: bottom;
+}
+
+.nowrap {
+  white-space: nowrap;
+}

@@ -1,0 +1,15 @@
+scalar Time
+
+type Order {
+    id: ID!
+    product_id: ID!
+    customer_id: ID!
+    production_id: ID!
+    created_at: Time
+}
+
+input InputCreateOrder {
+    product_id: ID!
+    customer_id: ID!
+    production_id: ID!
+}

@@ -1,0 +1,98 @@
+@import './variables/index';
+@import '../../scss/config';
+
+/* Progress bar */
+
+.progress {
+  height: $base-vertical-rhythm * 3;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  border: 2px solid $grey-700;
+  background: $grey-700;
+}
+
+.progress-complete.over {
+  background-color: $red-500;
+}
+
+.progress-running.over {
+  background-image: repeating-linear-gradient(45deg, $red-500, $red-500 3px, $red-500 0, $red-500 18px);
+}
+
+.progress-complete.over .progress-bar,
+.progress-running.over .progress-bar {
+  border-radius: 0;
+}
+
+.progress-bar {
+  background-color: $blue-500;
+  text-align: right;
+  border-radius: 0 4px 4px 0;
+  border-right: 2px solid $grey-700;
+}
+
+.progress-small {
+  height: $base-vertical-rhythm * 2;
+}
+
+.progress-small .progress-bar {
+  line-height: 12px;
+}
+
+.progress-bar-running {
+  background-color: transparent;
+  background-image: repeating-linear-gradient(45deg, $green-500, $green-500 3px, $green-400 0, $green-400 18px);
+}
+
+.progress-bar-waiting {
+  background-color: $grey-300;
+}
+
+.progress-bar-primary {
+  border-right: 4px solid darken($green-500, 5%);
+}
+
+.progress-bar-success {
+  border-right: 4px solid darken($green-500, 5%);
+}
+
+.progress-bar-info {
+  border-right: 4px solid darken($green-500, 5%);
+}
+
+.progress-bar-warning {
+  border-right: 4px solid darken($orange-500, 5%);
+}
+
+.progress-bar-danger {
+  border-right: 4px solid darken($red-500, 5%);
+}
+
+.full .progress-bar-success {
+  background-color: $green-500;
+  border-right: 4px solid darken($green-500, 5%);
+}
+
+.full .progress-bar-info {
+  background-color: $green-500;
+  border-right: 4px solid darken($green-500, 5%);
+}
+
+.full .progress-bar-warning {
+  background-color: $orange-500;
+  border-right: 4px solid darken($orange-500, 5%);
+}
+
+.full .progress-bar-danger {
+  background-color: $red-500;
+  border-right: 4px solid darken($red-500, 5%);
+}
+
+.full .progress-bar-primary {
+  background-color: $green-500;
+  border-right: 4px solid darken($green-500, 5%);
+}
+
+.full .progress-bar {
+  color: $white;
+}

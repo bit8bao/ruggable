@@ -1,0 +1,44 @@
+@import 'assets/scss/_fonts.scss';
+@import 'assets/scss/_vars.scss';
+@import 'assets/scss/_elements.scss';
+@import 'assets/scss/_sr-only.scss';
+@import 'assets/scss/libs/custom-react-tabs.scss';
+@import 'assets/scss/libs/react-grid-layout.scss';
+
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import 'assets/bootstrap_theme/style';
+
+/**
+  * Remove the below css once all html pages are in React
+ */
+html,
+body {
+  background-color: $white;
+}
+.app {
+  display: flex;
+}
+
+.app-main {
+  width: 100%;
+}
+
+.footer {
+  padding: 0 30px;
+}
+
+#razor .container-fluid {
+  padding: 60px 100px !important;
+}
+
+@media (max-width: 60rem) {
+  #razor .container-fluid {
+    padding: 30px 50px !important;
+  }
+}
+
+@media (max-width: 48rem) {
+  #razor .container-fluid {
+    padding: 10px !important;
+  }
+}

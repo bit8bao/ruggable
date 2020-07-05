@@ -1,0 +1,63 @@
+@import '../../scss/config';
+
+.pagination {
+  > li {
+    > a,
+    > span {
+      color: $grey-200;
+      background-color: transparent;
+      border: none;
+
+      &:hover,
+      &:focus {
+        color: $green-400;
+        background-color: $grey-700;
+        border: none;
+        border-radius: 4px;
+      }
+    }
+  }
+
+  > .active > a,
+  > .active > span {
+    color: $grey-700;
+    background-color: $green-400;
+    border-radius: 4px;
+    border: none;
+
+    &:hover,
+    &:focus {
+      color: $grey-700;
+      background-color: $green-400;
+      border: none;
+    }
+  }
+
+  > .disabled {
+    > span,
+    > span:hover,
+    > span:focus,
+    > a,
+    > a:hover,
+    > a:focus {
+      color: $grey-200;
+      background-color: transparent;
+      border: none;
+    }
+  }
+}
+
+// Making these hidden so we the JS has time to swap the inner html and then it will
+// unhide these so they are shown. Also making these fixed width to avoid stutter
+// from when text is replaced with icons.
+.PagedList-skipToNext a,
+.PagedList-skipToPrevious a {
+  width: 33.61px;
+  visibility: hidden;
+}
+
+.PagedList-skipToLast a,
+.PagedList-skipToFirst a {
+  width: 43.2px;
+  visibility: hidden;
+}

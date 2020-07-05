@@ -1,0 +1,21 @@
+
+
+
+
+
+.multichart__tooltip {
+  background-color: $grey-400;
+  color: $white;
+  padding: $base-vertical-rhythm * 2 $base-vertical-rhythm;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  p:first-child {
+    color: $grey-200;
+  }
+  p:not(:first-child) {
+    @include caption2();
+  }
+}

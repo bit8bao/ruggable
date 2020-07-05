@@ -1,0 +1,4 @@
+extend type Query {
+  sample(id: ID!): Sample
+  samples(offset: Int, limit: Int): [Sample!]!
+}

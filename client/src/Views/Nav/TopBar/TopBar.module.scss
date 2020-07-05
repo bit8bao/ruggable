@@ -1,0 +1,16 @@
+@import '../../../assets/scss/config';
+
+.wrapper {
+  background-color: $blue-900;
+  height: 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 40px;
+}
+
+.rightSide {
+  display: flex;
+  align-items: center;
+}

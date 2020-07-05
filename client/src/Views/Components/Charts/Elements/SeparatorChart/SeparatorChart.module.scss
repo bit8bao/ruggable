@@ -1,0 +1,30 @@
+@import '../../../../../assets/scss/config';
+
+.separatorChart {
+  width: 80%;
+}
+.separatorChartValues {
+  display: flex;
+}
+.separatorChartValue,
+.separatorChartLabel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.separatorChartLabel {
+  margin-top: $base-vertical-rhythm;
+}
+.separator {
+  height: 8px;
+  width: 100%;
+  border-radius: 4px;
+  // background: linear-gradient(90deg, #B1F41B 0%, #FF9F40 50.84%, #E64736 100%);
+  display: flex;
+  justify-content: space-around;
+}
+.separatorBar {
+  width: 2px;
+  height: 8px;
+  background-color: $grey-600;
+}

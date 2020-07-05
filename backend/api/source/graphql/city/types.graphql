@@ -1,0 +1,10 @@
+type City {
+    id: ID!
+    city_name: String!
+    description: String!
+}
+
+input InputCreateCity {
+    city_name: String!
+    description: String!
+}

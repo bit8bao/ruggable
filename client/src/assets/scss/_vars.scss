@@ -1,0 +1,91 @@
+/* ----------------------------------------------------------------------
+ Font properties
+ // https://sass-lang.com/styleguide/typography
+---------------------------------------------------------------------- */
+$font-family: 'Muli', sans-serif;
+
+$font-size-x-small: 12;
+$font-size-small: 14;
+$font-size-regular: 16;
+$font-size-large: 18;
+$font-size-x-large: 20;
+$font-size-xx-large: 26;
+$font-size-xxx-large: 32;
+$font-size-super-large: 64;
+
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-bold: 600;
+
+@function font-size($pixels) {
+  // TODO: change to rems once all code is SPA
+  @return $pixels + px;
+}
+
+/* ----------------------------------------------------------------------
+ Colors
+---------------------------------------------------------------------- */
+// Primary Interface
+$green-400: #b1f41b;
+$green-500: #9ed12b;
+$green-600: #58d12b;
+$green-700: #5d7725;
+$grey-200: #c3c5c8;
+$grey-300: #9c9ea1;
+$grey-400: #606469;
+$grey-500: #41474d;
+$grey-600: #2d3136;
+$grey-700: #222529;
+$grey-750: #1a1d20;
+$grey-900: #0c0d0e;
+$teal-400: #17ead9;
+$white: #ffffff;
+
+// Notifications & Alerts
+$blue-400: #6f88ff;
+$blue-500: #6078ea;
+$blue-700: #394887;
+$blue-900: #141e43;
+$orange-500: #ff9f40;
+$orange-600: #e58627;
+$red-500: #ef4836;
+
+// Data visualization
+$blue-gradient1: $teal-400;
+$blue-gradient2: $blue-500;
+
+$green-gradient1: $green-400;
+$green-gradient2: $green-600;
+
+$red-gradient1: $orange-500;
+$red-gradient2: $red-500;
+
+/* ----------------------------------------------------------------------
+ Headers
+---------------------------------------------------------------------- */
+
+/* ----------------------------------------------------------------------
+ Breakpoints
+---------------------------------------------------------------------- */
+$site-max-width: 80.625rem !default;
+$xxs: 25rem !default; // 400px
+$xs: 32.5rem !default; // 480px
+$sm: 48rem !default; // 768px
+$md: 60rem !default; // 960px
+$lg: 73.13rem !default; // 1170px
+$xl: $site-max-width !default; // 1290px
+
+$media-queries: true !default;
+
+/* ----------------------------------------------------------------------
+ z-index
+---------------------------------------------------------------------- */
+$z-index-navMenu: 5;
+$z-index-modal: 10;
+$z-index-loadingIndicator: 15;
+$z-index-toasts: 20;
+
+/* ----------------------------------------------------------------------
+ Variable constants
+---------------------------------------------------------------------- */
+$base-vertical-rhythm: 8px;

@@ -1,0 +1,55 @@
+@import './import/mixins/index';
+@import '../scss/config';
+
+$operation-detail-set-col-width: 240px;
+
+.operation-detail {
+  padding: 0 $base-vertical-rhythm * 2;
+}
+
+.operation-detail__section {
+  @include divide_2();
+  @include vr_3();
+}
+.operation-detail__section:last-child {
+  padding-bottom: 0; // undo .divide_2
+  border-bottom: none; // undo .divide_2
+  @include vr_2();
+}
+
+.operation-detail__section__row {
+  display: flex;
+  flex-wrap: wrap;
+  @include vr_1();
+}
+.operation-detail__section__row:last-child {
+  @include vr_colMd_1();
+}
+
+.operation-detail__section__row__set-col {
+  width: $operation-detail-set-col-width;
+}
+
+.operation-detail__section__row__grow-col {
+  flex-basis: $operation-detail-set-col-width;
+  flex-grow: 2;
+  flex-shrink: 1;
+}
+
+.operation-detail-icon {
+  @include utl-display_flex();
+  img {
+    margin-top: -4px;
+    @include hr_1();
+  }
+}
+
+.operation-detail-icon__text {
+  span:first-child {
+    @include caption2();
+  }
+  span:last-child {
+    @include caption1();
+  }
+  @include utl-display_flexColumn();
+}

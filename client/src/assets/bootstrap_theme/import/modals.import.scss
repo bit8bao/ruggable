@@ -1,0 +1,49 @@
+@import '../../scss/config';
+
+.modal-content {
+  background-color: $grey-600;
+
+  .modal-title {
+    font-size: 22px;
+  }
+
+  .modal-header {
+    border-width: 2px;
+    border-color: $grey-400;
+    background-color: $grey-700;
+    padding: $base-vertical-rhythm * 3;
+
+    & h2 {
+      margin: 0;
+    }
+
+    .close {
+      color: $white;
+      text-shadow: none;
+      filter: alpha(opacity=20);
+      opacity: 0.2;
+    }
+  }
+
+  .modal-body {
+    padding: 40px;
+    max-height: 75vh;
+    overflow: visible;
+    background: $grey-700;
+  }
+
+  .modal-footer {
+    border-color: $grey-400;
+    background-color: $grey-700;
+    padding: 20px;
+  }
+}
+
+.modal-backdrop.in {
+  filter: alpha(opacity=10);
+  opacity: 0.1;
+}
+
+.modal {
+  background: rgba(12, 13, 14, 0.7);
+}

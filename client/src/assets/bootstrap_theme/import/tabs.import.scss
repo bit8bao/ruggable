@@ -1,0 +1,107 @@
+@import '../../scss/config';
+
+.nav-tabs {
+  border: none;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  background-color: $grey-600;
+  color: $green-400;
+  border-width: 0 0 1px 0;
+}
+
+.tab-pane-body {
+  padding: $base-vertical-rhythm * 4;
+  border-top: none;
+  background-color: $grey-600;
+  margin-bottom: 20px;
+}
+
+.nav-tabs > li a:hover {
+  background: transparent;
+  border-color: transparent;
+  color: $white;
+}
+
+.nav-tabs > li > a {
+  height: $base-vertical-rhythm * 6;
+  min-width: 140px;
+  padding: $base-vertical-rhythm * 2 $base-vertical-rhythm * 4;
+  text-transform: uppercase;
+  color: $grey-200;
+  text-align: center;
+}
+
+.tabs-below > .nav-tabs,
+.tabs-right > .nav-tabs,
+.tabs-left > .nav-tabs {
+  border-bottom: 0;
+}
+
+.tabs-left .tab-pane-body {
+  position: static;
+}
+
+.tabs-left > .nav-tabs,
+.tabs-right > .nav-tabs {
+  width: 20%;
+}
+
+.tabs-left .tab-pane-body {
+  width: 80%;
+  margin-left: 20%;
+}
+
+.tabs-right .tab-pane-body {
+  width: 80%;
+  margin-right: 20%;
+}
+
+.tab-content > .tab-pane,
+.pill-content > .pill-pane {
+  display: none;
+}
+
+.tab-content > .active,
+.pill-content > .active {
+  display: block;
+}
+
+.tabs-below > .nav-tabs > li {
+  margin-bottom: 0;
+}
+
+.tabs-below > .nav-tabs > li > a {
+  border-radius: 0 0 4px 4px;
+}
+
+.tabs-left > .nav-tabs > li,
+.tabs-right > .nav-tabs > li {
+  float: none;
+}
+
+.tabs-left > .nav-tabs > li > a,
+.tabs-right > .nav-tabs > li > a {
+  margin-right: 0;
+  margin-bottom: 3px;
+}
+
+.tabs-left > .nav-tabs {
+  float: left;
+  margin-right: 19px;
+}
+
+.tabs-left > .nav-tabs > li > a {
+  border-radius: 4px 0 0 4px;
+}
+
+.tabs-right > .nav-tabs {
+  float: right;
+  margin-left: 19px;
+}
+
+.tabs-right > .nav-tabs > li > a {
+  border-radius: 0 4px 4px 0;
+}

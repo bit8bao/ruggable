@@ -1,0 +1,90 @@
+@import '../../../../../assets/bootstrap_theme/import/mixins/index';
+@import '../../../../../assets/scss/config';
+
+.timeBoxedGantt {
+  height: 100%;
+  width: 100%;
+}
+
+.timeBoxedGantt__chart__bookends {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: $base-vertical-rhythm * 2;
+  margin-left: 20%;
+  overflow: hidden;
+}
+.timeBoxedGantt__chart__bookends__bookend {
+  @include caption1();
+  display: flex;
+  flex-direction: column;
+  &:last-child {
+    text-align: right;
+  }
+}
+
+.timeBoxedGantt__chart__bookends__titles {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.timeBoxedGantt__chart__bookends__titles__top {
+  @include callout();
+  text-transform: none;
+}
+.timeBoxedGantt__chart__bookends__titles__bottom {
+  @include caption1();
+}
+
+.timeBoxedGantt__chart {
+  height: 100%;
+}
+.timeBoxedGantt__chart__body {
+  display: flex;
+  height: 100%;
+}
+.timeBoxedGantt__chart__body__labels {
+  width: 20%;
+}
+.timeBoxedGantt__chart__body__labels__label {
+  height: 40px;
+  padding-right: $base-vertical-rhythm * 3;
+  margin-bottom: $base-vertical-rhythm * 3;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  span:first-child {
+    @include callout();
+    @include txt-ellipsis();
+  }
+  span:last-child {
+    @include caption1();
+    @include txt-ellipsis();
+  }
+}
+.timeBoxedGantt__chart__body__rows {
+  width: 80%;
+  border-left: 2px solid $grey-300;
+  border-right: 2px solid $grey-300;
+  position: relative;
+  height: 100%;
+}
+.timeBoxedGantt__chart__body__rows__background {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.timeBoxedGantt__chart__body__rows__row {
+  height: 40px;
+  margin-bottom: $base-vertical-rhythm * 3;
+  position: relative;
+  overflow: hidden; // there can be mismatches between time values in the api data, so this hides bars from overalpping in those cases.
+}
+.timeBoxedGantt__chart__body__rows__row__entry {
+  position: absolute;
+  background-color: $blue-500;
+  height: 100%;
+}
+.timeBoxedGantt__chart__body__rows__row__entry___running {
+  background-color: transparent;
+  background-image: repeating-linear-gradient(45deg, $green-500, $green-500 3px, $green-400 0, $green-400 18px);
+}

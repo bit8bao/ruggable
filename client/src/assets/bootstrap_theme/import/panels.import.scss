@@ -1,0 +1,190 @@
+@import './mixins/index';
+@import '../../scss/config';
+
+.panel {
+  background-color: transparent;
+  box-shadow: none;
+  color: $white;
+  border: none;
+  border-radius: 4px;
+  @include caption1();
+
+  &.validation-summary-errors {
+    ul {
+      list-style-type: none;
+      margin: $base-vertical-rhythm 0;
+      padding-left: $base-vertical-rhythm * 3;
+    }
+  }
+
+  &.panel-c-danger.validation-summary-valid {
+    display: none;
+  }
+}
+
+.panel-inline {
+  display: inline;
+  @include caption2();
+  background-color: transparent;
+  box-shadow: none;
+  color: $white;
+  border: none;
+  padding: $base-vertical-rhythm / 2 $base-vertical-rhythm;
+
+  &.panel-filled {
+    background-color: $grey-500;
+  }
+
+  &.panel-c-warning {
+    border-left: 3px solid $orange-500;
+  }
+}
+
+.panel .panel-body {
+  padding: $base-vertical-rhythm;
+}
+
+.panel .panel-footer {
+  background-color: transparent;
+  border: none;
+}
+
+.panel > .panel-heading {
+  color: $white;
+}
+
+.panel-tools {
+  display: inline-block;
+  float: right;
+  margin-top: 0;
+  padding: 0;
+  position: relative;
+}
+
+.panel-tools a {
+  margin-left: 2px;
+  color: $white;
+  cursor: pointer;
+
+  &:hover {
+    color: $white;
+  }
+}
+
+.panel.panel-c-white {
+  border-left: 6px solid $white;
+}
+
+.panel.panel-c-accent {
+  border-left: 6px solid $green-500;
+}
+
+.panel.panel-c-primary {
+  border-left: 6px solid $green-500;
+}
+
+.panel.panel-c-warning {
+  border-left: 6px solid $orange-500;
+}
+
+.panel.panel-c-info {
+  border-left: 6px solid $orange-500;
+}
+
+.panel.panel-c-success {
+  border-left: 6px solid $green-500;
+}
+
+.panel.panel-c-danger {
+  border-left: 6px solid $red-500;
+}
+
+.panel.panel-b-accent {
+  background-color: $green-500;
+  color: $white;
+}
+
+.panel.panel-b-white {
+  background-color: $white;
+
+  color: darken($white, 20%);
+
+  .panel-heading {
+    color: darken($white, 20%);
+  }
+
+  .panel-footer {
+    color: darken($white, 20%);
+  }
+}
+
+.panel.panel-filled {
+  background-color: $grey-500;
+}
+
+.panel.panel-errors.panel-c-warning .panel-body i {
+  color: $orange-500;
+}
+
+.panel.panel-errors .panel-body {
+  padding: 0;
+  position: relative;
+
+  & i {
+    display: none;
+    position: absolute;
+    right: $base-vertical-rhythm * 4;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: $base-vertical-rhythm * 2;
+    color: $red-500;
+  }
+
+  &.active {
+    padding: $base-vertical-rhythm $base-vertical-rhythm $base-vertical-rhythm $base-vertical-rhythm * 5;
+
+    & i {
+      display: inherit;
+    }
+
+    & .validation-summary-errors ul {
+      max-width: 85%;
+    }
+  }
+
+  & span {
+    display: list-item;
+  }
+
+  & .validation-summary-errors ul {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.view-header {
+  margin: 0 0 $base-vertical-rhythm * 11 0;
+
+  .pe {
+    margin-left: -7px;
+  }
+}
+
+.panel.collapsed .panel-body,
+.panel.collapsed .panel-footer {
+  display: none;
+}
+
+.panel.collapsed .fa.fa-chevron-up:before {
+  content: '\f078';
+}
+
+.panel.collapsed .fa.fa-chevron-down:before {
+  content: '\f077';
+}
+
+.support-panel {
+  p {
+    font-size: 16px;
+  }
+}

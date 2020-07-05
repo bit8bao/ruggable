@@ -1,0 +1,117 @@
+@import './mixins/index';
+@import '../../scss/config';
+
+.btn {
+  color: inherit;
+  background-color: transparent;
+  text-transform: uppercase;
+  border-width: 2px;
+  padding: 4px 12px;
+  font-size: 16px;
+  &:active,
+  &.active {
+    box-shadow: none;
+  }
+}
+
+.btn-lg {
+  padding: $base-vertical-rhythm $base-vertical-rhythm * 4;
+}
+
+.btn-lg_narrow {
+  padding: $base-vertical-rhythm;
+}
+
+.btn-sm {
+  padding: 4px 32px;
+}
+
+.buttons-margin .btn {
+  margin-bottom: 5px;
+}
+
+.btn-default {
+  border-color: lighten($grey-700, 18%);
+}
+
+.btn {
+  &.btn-w-sm {
+    min-width: 80px;
+  }
+
+  &.btn-w-md {
+    min-width: 120px;
+  }
+
+  &.btn-w-lg {
+    min-width: 160px;
+  }
+
+  &.btn-rounded {
+    border-radius: 6px;
+  }
+
+  &.btn-squared {
+    border-radius: 0;
+  }
+}
+
+/*
+  new-button-variant mixin:
+
+  $static-text-color;
+  $hover-text-color;
+  $active-text-color;
+
+  $static-border-color;
+  $hover-border-color;
+  $active-border-color;
+
+  $static-bg-color;
+  $hover-bg-color;
+  $active-bg-color;
+*/
+
+.btn-primary {
+  @include button-variant($white, $grey-600, $grey-600, $green-500, $green-400, $green-500, transparent, $green-400, $green-500);
+}
+
+.btn-default {
+  @include button-variant($grey-200, $white, $white, $grey-500, $grey-500, $grey-500, transparent, $grey-500, $grey-500);
+}
+
+.btn-link {
+  @include button-variant($grey-200, $green-400, $green-500, transparent, transparent, transparent, transparent, transparent, transparent);
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &--primary {
+    color: $green-500;
+
+    &:hover,
+    &:active,
+    &:active:focus,
+    &:focus,
+    &.active {
+      color: $green-400;
+    }
+  }
+
+  &--danger {
+    color: $red-500;
+
+    &:hover,
+    &:active,
+    &:active:focus,
+    &:focus,
+    &.active {
+      color: $red-500;
+    }
+  }
+}
+
+.btn-danger {
+  @include button-variant($white, $white, $white, $red-500, $red-500, $red-500, transparent, $red-500, $red-500);
+}

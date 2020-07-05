@@ -1,0 +1,63 @@
+@import '../../assets/scss/config';
+
+.cta {
+  display: flex;
+  justify-content: space-between;
+
+  .rightGroup {
+    display: flex;
+  }
+
+  .pad {
+    margin-left: $base-vertical-rhythm;
+  }
+}
+
+.cardItems {
+  > * {
+    margin-bottom: 2 * $base-vertical-rhythm;
+  }
+}
+
+.cardItemBtn {
+  width: 100%;
+}
+
+.nav {
+  display: flex;
+
+  > *:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.filterBar {
+  display: flex;
+}
+
+.input {
+  width: 60%;
+  background-color: transparent;
+  border: none;
+  text-align: right;
+  padding: 8px 16px;
+  color: $white;
+  font-size: font-size($font-size-small);
+  margin-left: 10px;
+  margin-right: 16px;
+
+  &:focus {
+    background-color: $grey-600;
+  }
+
+  &::placeholder {
+    color: $grey-200;
+    opacity: 1; /* Firefox */
+  }
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

@@ -1,0 +1,3 @@
+extend type Mutation{
+    createCity(input: InputCreateCity) : City!
+}

@@ -1,0 +1,145 @@
+@import '../../../scss/config';
+
+/* Select2 custom styles */
+
+.select2-container .select2-selection--single {
+  height: $base-vertical-rhythm * 4;
+}
+
+.select2-results__option {
+  padding: 8px 8px 8px 16px;
+  background-color: $grey-500;
+}
+
+form[action*='EditOperations'] {
+  & .select2-results__option {
+    padding: $base-vertical-rhythm $base-vertical-rhythm / 2;
+  }
+
+  & .select2-container .select2-selection--single .select2-selection__rendered {
+    padding-left: $base-vertical-rhythm / 2;
+  }
+}
+
+.select2-container--default .select2-selection--single,
+.select2-container--default .select2-selection--multiple {
+  color: $grey-200;
+  border: 0;
+  border-bottom: 2px solid $grey-400;
+  border-radius: 0;
+  background-color: transparent;
+  font-size: 14px;
+  height: 34px; // needs 2px nudge to match other inputs
+}
+
+select.input-validation-error + .select2-container--default .select2-selection--single,
+select.input-validation-error + .select2-container--default .select2-selection--multiple {
+  border-color: $red-500;
+}
+
+select.valid + .select2-container--default .select2-selection--single,
+select.valid + .select2-container--default .select2-selection--multiple {
+  border-color: $green-500;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__rendered,
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  color: $white;
+
+  &[title='Select'],
+  &[title='Select Operation Type'] {
+    color: $grey-200;
+  }
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+  background-color: lighten($grey-600, 2%);
+  border-color: lighten($grey-700, 22%);
+
+  &:hover {
+    background-color: lighten($grey-600, 6%);
+  }
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove:hover {
+  color: $green-400;
+}
+
+.select2-container--default.select2-container--disabled .select2-selection--single {
+  background-color: transparent;
+  cursor: not-allowed;
+
+  .select2-selection__rendered {
+    color: $grey-200;
+  }
+}
+
+.select2-container .select2-selection--single .select2-selection__rendered,
+.select2-container .select2-selection--multiple .select2-selection__rendered {
+  padding-top: 2px;
+  padding-left: 16px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  height: 35px;
+}
+
+.select2-container--default.select2-container--focus {
+  outline: none;
+  background-color: $grey-500;
+
+  .select2-selection--single,
+  .select2-selection--multiple {
+    border-color: $grey-500;
+  }
+
+  .select2-selection--multiple {
+    border: none;
+    border-bottom: 2px solid;
+  }
+}
+
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+  background-color: $grey-700;
+  color: $green-500;
+}
+
+.select2-container--default .select2-search--dropdown .select2-search__field {
+  border-color: $grey-500;
+  background-color: $grey-500;
+}
+
+.select2-container--default .select2-results__option[aria-selected='true'] {
+  background-color: $grey-700;
+  color: $green-500;
+}
+
+.select2-dropdown {
+  border-color: $grey-500;
+  background-color: $grey-600;
+
+  input:focus {
+    outline: none;
+  }
+}
+
+.select2-selection {
+  outline: none;
+}
+
+.ui-select-container.ui-select-bootstrap .ui-select-choices-row.active > a {
+  background-color: $green-500;
+}
+
+.select2-container--default .select2-search--inline .select2-search__field {
+  caret-color: $green-500;
+  background-color: $grey-500;
+
+  &::placeholder {
+    color: $grey-200;
+  }
+}
+
+.select2-selection__choice__remove {
+  margin-right: 4px;
+}

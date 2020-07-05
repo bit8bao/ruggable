@@ -1,0 +1,368 @@
+@import '../variables/index';
+@import '../../../scss/config';
+
+/* VR MIXINS */
+@mixin vr_1() {
+  margin-bottom: 1 * $base-vertical-rhythm;
+}
+@mixin vr_2() {
+  margin-bottom: 2 * $base-vertical-rhythm;
+}
+@mixin vr_3() {
+  margin-bottom: 3 * $base-vertical-rhythm;
+}
+@mixin vr_4() {
+  margin-bottom: 4 * $base-vertical-rhythm;
+}
+@mixin vr_5() {
+  margin-bottom: 5 * $base-vertical-rhythm;
+}
+@mixin vr_6() {
+  margin-bottom: 6 * $base-vertical-rhythm;
+}
+@mixin vr_7() {
+  margin-bottom: 7 * $base-vertical-rhythm;
+}
+@mixin vr_8() {
+  margin-bottom: 8 * $base-vertical-rhythm;
+}
+@mixin vr_9() {
+  margin-bottom: 9 * $base-vertical-rhythm;
+}
+@mixin vr_10() {
+  margin-bottom: 10 * $base-vertical-rhythm;
+}
+@mixin vr_11() {
+  margin-bottom: 11 * $base-vertical-rhythm;
+}
+@mixin vr_12() {
+  margin-bottom: 12 * $base-vertical-rhythm;
+}
+
+@mixin vr_colMd_1() {
+  @media (max-width: $tablet-breakpoint) {
+    margin-bottom: 1 * $base-vertical-rhythm;
+  }
+}
+@mixin vr_colMd_2() {
+  @media (max-width: $tablet-breakpoint) {
+    margin-bottom: 2 * $base-vertical-rhythm;
+  }
+}
+@mixin vr_colMd_3() {
+  @media (max-width: $tablet-breakpoint) {
+    margin-bottom: 3 * $base-vertical-rhythm;
+  }
+}
+@mixin vr_colMd_4() {
+  @media (max-width: $tablet-breakpoint) {
+    margin-bottom: 4 * $base-vertical-rhythm;
+  }
+}
+@mixin vr_colMd_5() {
+  @media (max-width: $tablet-breakpoint) {
+    margin-bottom: 5 * $base-vertical-rhythm;
+  }
+}
+@mixin vr_colMd_6() {
+  @media (max-width: $tablet-breakpoint) {
+    margin-bottom: 6 * $base-vertical-rhythm;
+  }
+}
+@mixin vr_colMd_7() {
+  @media (max-width: $tablet-breakpoint) {
+    margin-bottom: 7 * $base-vertical-rhythm;
+  }
+}
+@mixin vr_colMd_8() {
+  @media (max-width: $tablet-breakpoint) {
+    margin-bottom: 8 * $base-vertical-rhythm;
+  }
+}
+@mixin vr_colMd_9() {
+  @media (max-width: $tablet-breakpoint) {
+    margin-bottom: 9 * $base-vertical-rhythm;
+  }
+}
+@mixin vr_colMd_10() {
+  @media (max-width: $tablet-breakpoint) {
+    margin-bottom: 10 * $base-vertical-rhythm;
+  }
+}
+@mixin vr_colMd_11() {
+  @media (max-width: $tablet-breakpoint) {
+    margin-bottom: 11 * $base-vertical-rhythm;
+  }
+}
+@mixin vr_colMd_12() {
+  @media (max-width: $tablet-breakpoint) {
+    margin-bottom: 12 * $base-vertical-rhythm;
+  }
+}
+
+/* HR MIXIN */
+@mixin hr_1() {
+  margin-right: 1 * $base-vertical-rhythm;
+}
+@mixin hr_2() {
+  margin-right: 2 * $base-vertical-rhythm;
+}
+@mixin hr_3() {
+  margin-right: 3 * $base-vertical-rhythm;
+}
+@mixin hr_4() {
+  margin-right: 4 * $base-vertical-rhythm;
+}
+@mixin hr_5() {
+  margin-right: 5 * $base-vertical-rhythm;
+}
+@mixin hr_6() {
+  margin-right: 6 * $base-vertical-rhythm;
+}
+@mixin hr_7() {
+  margin-right: 7 * $base-vertical-rhythm;
+}
+@mixin hr_8() {
+  margin-right: 8 * $base-vertical-rhythm;
+}
+@mixin hr_9() {
+  margin-right: 9 * $base-vertical-rhythm;
+}
+@mixin hr_10() {
+  margin-right: 10 * $base-vertical-rhythm;
+}
+@mixin hr_11() {
+  margin-right: 11 * $base-vertical-rhythm;
+}
+@mixin hr_12() {
+  margin-right: 12 * $base-vertical-rhythm;
+}
+
+/* DIVIDE MIXIN */
+@mixin divide_1() {
+  $padding: $base-vertical-rhythm * 1;
+  padding-bottom: ($padding - 1px);
+  border-bottom: 1px solid $grey-500;
+}
+@mixin divide_2() {
+  $padding: $base-vertical-rhythm * 2;
+  padding-bottom: ($padding - 1px);
+  border-bottom: 1px solid $grey-500;
+}
+@mixin divide_3() {
+  $padding: $base-vertical-rhythm * 3;
+  padding-bottom: ($padding - 1px);
+  border-bottom: 1px solid $grey-500;
+}
+@mixin divide_4() {
+  $padding: $base-vertical-rhythm * 4;
+  padding-bottom: ($padding - 1px);
+  border-bottom: 1px solid $grey-500;
+}
+@mixin divide_5() {
+  $padding: $base-vertical-rhythm * 5;
+  padding-bottom: ($padding - 1px);
+  border-bottom: 1px solid $grey-500;
+}
+@mixin divide_6() {
+  $padding: $base-vertical-rhythm * 6;
+  padding-bottom: ($padding - 1px);
+  border-bottom: 1px solid $grey-500;
+}
+@mixin divide_7() {
+  $padding: $base-vertical-rhythm * 7;
+  padding-bottom: ($padding - 1px);
+  border-bottom: 1px solid $grey-500;
+}
+@mixin divide_8() {
+  $padding: $base-vertical-rhythm * 8;
+  padding-bottom: ($padding - 1px);
+  border-bottom: 1px solid $grey-500;
+}
+@mixin divide_9() {
+  $padding: $base-vertical-rhythm * 9;
+  padding-bottom: ($padding - 1px);
+  border-bottom: 1px solid $grey-500;
+}
+@mixin divide_10() {
+  $padding: $base-vertical-rhythm * 10;
+  padding-bottom: ($padding - 1px);
+  border-bottom: 1px solid $grey-500;
+}
+@mixin divide_11() {
+  $padding: $base-vertical-rhythm * 11;
+  padding-bottom: ($padding - 1px);
+  border-bottom: 1px solid $grey-500;
+}
+@mixin divide_12() {
+  $padding: $base-vertical-rhythm * 12;
+  padding-bottom: ($padding - 1px);
+  border-bottom: 1px solid $grey-500;
+}
+
+@mixin padding_horizontal_left($base) {
+  padding-left: $base-vertical-rhythm * $base !important;
+}
+
+@mixin padding_horizontal_right($base) {
+  padding-right: $base-vertical-rhythm * $base !important;
+}
+
+@mixin no-margin() {
+  margin: 0;
+}
+
+@mixin no-padding() {
+  padding: 0;
+}
+
+@mixin stackedGanttWindow() {
+  position: absolute;
+  display: flex;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+}
+
+@mixin set-width_px_0() {
+  width: 0 * 10px;
+}
+@mixin set-width_px_10() {
+  width: 1 * 10px;
+}
+@mixin set-width_px_20() {
+  width: 2 * 10px;
+}
+@mixin set-width_px_30() {
+  width: 3 * 10px;
+}
+@mixin set-width_px_40() {
+  width: 4 * 10px;
+}
+@mixin set-width_px_50() {
+  width: 5 * 10px;
+}
+@mixin set-width_px_60() {
+  width: 6 * 10px;
+}
+@mixin set-width_px_70() {
+  width: 7 * 10px;
+}
+@mixin set-width_px_80() {
+  width: 8 * 10px;
+}
+@mixin set-width_px_90() {
+  width: 9 * 10px;
+}
+@mixin set-width_px_100() {
+  width: 10 * 10px;
+}
+@mixin set-width_px_110() {
+  width: 11 * 10px;
+}
+@mixin set-width_px_120() {
+  width: 12 * 10px;
+}
+@mixin set-width_px_130() {
+  width: 13 * 10px;
+}
+@mixin set-width_px_140() {
+  width: 14 * 10px;
+}
+@mixin set-width_px_150() {
+  width: 15 * 10px;
+}
+@mixin set-width_px_160() {
+  width: 16 * 10px;
+}
+@mixin set-width_px_170() {
+  width: 17 * 10px;
+}
+@mixin set-width_px_180() {
+  width: 18 * 10px;
+}
+@mixin set-width_px_190() {
+  width: 19 * 10px;
+}
+@mixin set-width_px_200() {
+  width: 20 * 10px;
+}
+@mixin set-width_px_210() {
+  width: 21 * 10px;
+}
+@mixin set-width_px_220() {
+  width: 22 * 10px;
+}
+@mixin set-width_px_230() {
+  width: 23 * 10px;
+}
+@mixin set-width_px_240() {
+  width: 24 * 10px;
+}
+@mixin set-width_px_250() {
+  width: 25 * 10px;
+}
+@mixin set-width_px_260() {
+  width: 26 * 10px;
+}
+@mixin set-width_px_270() {
+  width: 27 * 10px;
+}
+@mixin set-width_px_280() {
+  width: 28 * 10px;
+}
+@mixin set-width_px_290() {
+  width: 29 * 10px;
+}
+@mixin set-width_px_300() {
+  width: 30 * 10px;
+}
+@mixin set-width_px_310() {
+  width: 31 * 10px;
+}
+@mixin set-width_px_320() {
+  width: 32 * 10px;
+}
+@mixin set-width_px_330() {
+  width: 33 * 10px;
+}
+@mixin set-width_px_340() {
+  width: 34 * 10px;
+}
+@mixin set-width_px_350() {
+  width: 35 * 10px;
+}
+@mixin set-width_px_360() {
+  width: 36 * 10px;
+}
+@mixin set-width_px_370() {
+  width: 37 * 10px;
+}
+@mixin set-width_px_380() {
+  width: 38 * 10px;
+}
+@mixin set-width_px_390() {
+  width: 39 * 10px;
+}
+@mixin set-width_px_400() {
+  width: 40 * 10px;
+}
+
+@mixin set-width_px_56() {
+  width: 56px;
+}
+
+@mixin set-width_px_16() {
+  width: 16px;
+}
+
+@mixin set-height_px_48() {
+  height: 48px;
+}
+
+@mixin set-width_40 {
+  width: 40%;
+}

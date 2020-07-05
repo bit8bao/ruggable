@@ -1,0 +1,47 @@
+@import '../../scss/config';
+
+.content > div {
+  opacity: 0;
+}
+
+.pace {
+  pointer-events: none;
+
+  user-select: none;
+
+  z-index: 2000;
+  position: fixed;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 5px;
+  width: 200px;
+  background: $white;
+  overflow: hidden;
+}
+
+.pace .pace-progress {
+  box-sizing: border-box;
+
+  transform: translate3d(0, 0, 0);
+
+  max-width: 200px;
+  z-index: 2000;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 100%;
+  height: 100%;
+  width: 100%;
+  background: $green-500;
+}
+
+.pace.pace-inactive {
+  display: none;
+}
+
+.pace-done .content > div {
+  opacity: 1;
+}

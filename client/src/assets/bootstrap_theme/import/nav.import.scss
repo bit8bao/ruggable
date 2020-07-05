@@ -1,0 +1,115 @@
+@import '../../scss/config';
+
+.luna-nav.nav {
+  padding-top: 15px;
+  font-size: 16px;
+  font-weight: 400;
+
+  li > a,
+  .nav-category {
+    padding: 13px 15px 13px 25px;
+    margin: 8px 0;
+  }
+
+  // nav-info is used to put information below the links in the left-nav
+  .nav-info {
+    // Only for demo purpose
+    margin-top: 50px;
+
+    padding: 20px 25px 25px 25px;
+    font-size: 12px;
+    background-color: darken($grey-700, 5%);
+
+    i {
+      font-size: 34px;
+    }
+  }
+
+  li.active > a {
+    border-left: 8px solid $green-400;
+    color: lighten($grey-200, 30%);
+    padding-left: 16px;
+  }
+
+  .sub-nav {
+    padding-left: 10px;
+    line-height: 16px;
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .sub-nav li {
+    padding-top: 8px;
+    padding-bottom: 8px;
+
+    &:first-child {
+      padding-top: 0;
+    }
+  }
+
+  // If we are a nested sub nav, simulate the li padding
+  // to keep sub item spacing consistent
+  .sub-nav .sub-nav li:first-child {
+    padding-top: 20px;
+  }
+
+  .sub-nav li a {
+    padding: 0px 15px 0px 28px;
+    margin: 0;
+  }
+
+  .sub-nav li.active > a {
+    padding: 0px 15px 0px 20px;
+  }
+
+  .sub-nav-link-nested {
+    height: 24px;
+
+    .sub-nav-icon {
+      margin-top: -2px;
+    }
+  }
+
+  .sub-nav li > .sub-nav-link-nested,
+  .sub-nav li.active > .sub-nav-link-nested {
+    padding-top: 4px;
+  }
+
+  li > a {
+    color: $grey-200;
+  }
+
+  li a:hover,
+  li a:focus,
+  li a:active {
+    background: transparent;
+  }
+
+  li a:hover,
+  li a:active {
+    color: $green-400;
+    background: transparent;
+  }
+
+  .nav-category {
+    color: $white;
+    margin-top: 10px;
+  }
+
+  .sub-nav-icon {
+    float: right;
+    transform: rotate(90deg);
+    transition: transform 0.2s ease-in-out;
+    height: 20px;
+    width: 20px;
+  }
+
+  .sub-nav-icon i {
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .sub-nav-icon_flip {
+    transform: rotate(270deg);
+  }
+}

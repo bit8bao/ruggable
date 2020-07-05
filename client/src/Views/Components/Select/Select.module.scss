@@ -1,0 +1,10 @@
+@import '../../../assets/scss/config';
+
+.wrapper {
+  width: 100%;
+  z-index: 3;
+}
+
+.borderBottom {
+  border-bottom: 2px solid $grey-200;
+}

@@ -1,0 +1,47 @@
+@import '../../../assets/scss/config';
+
+.wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 10px 0;
+  list-style: none;
+  background-color: $grey-900;
+
+  > *:not(:last-child) {
+    margin-bottom: 5px;
+  }
+
+  :global {
+    #Admin {
+      margin-top: auto;
+    }
+  }
+}
+
+.btn {
+  background: transparent;
+  width: 75px;
+  height: 75px;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .icon {
+    height: 25px;
+    margin-bottom: 5px;
+    fill: $green-500;
+  }
+
+  &:hover,
+  &.isActive {
+    background-color: $grey-600;
+
+    .icon {
+      fill: $white;
+    }
+  }
+}

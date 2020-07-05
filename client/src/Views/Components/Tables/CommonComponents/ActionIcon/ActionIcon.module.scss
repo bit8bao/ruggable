@@ -1,0 +1,61 @@
+@import '../../../../../assets/scss/config';
+
+/**
+  IE11 Support - Icon
+**/
+_:-ms-fullscreen,
+:root .wrapper {
+  display: block !important;
+  height: 25px;
+
+  > * {
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+  }
+}
+
+/**
+  Safari Support - Icon
+**/
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    .wrapper {
+      display: block !important;
+      height: 25px;
+
+      > * {
+        justify-content: center;
+        width: 25px;
+        height: 25px;
+      }
+    }
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  text-align: center;
+
+  > * {
+    display: flex;
+    justify-content: center;
+  }
+
+  svg {
+    fill: $grey-200;
+    width: 18px;
+  }
+
+  svg:hover {
+    fill: $green-400;
+  }
+}
+
+.clearBtn {
+  background: none;
+  border: none;
+}

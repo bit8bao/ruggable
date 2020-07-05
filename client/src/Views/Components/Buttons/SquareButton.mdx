@@ -1,0 +1,45 @@
+---
+name: SquareButton
+menu: Buttons
+---
+
+import { Playground, Props } from 'docz';
+import Button, { ButtonStyleEnum } from './Button';
+
+# Pill Button
+
+## Properties
+
+<Props of={Button} />
+
+## Square Default
+
+<Playground style={{ backgroundColor: '#2d3136', padding: '20px' }}>
+  <Button displayType={ButtonStyleEnum.Square} onClick={() => alert('I was clicked')}>
+    Click me
+  </Button>
+</Playground>
+
+## Square Active
+
+<Playground style={{ backgroundColor: '#2d3136', padding: '20px' }}>
+  <Button displayType={ButtonStyleEnum.Square} isActive={true}>
+    Click me
+  </Button>
+</Playground>
+
+## Square Form Submit
+
+<Playground style={{ backgroundColor: '#2d3136', padding: '20px' }}>
+  <Button displayType={ButtonStyleEnum.Square} type="submit">
+    Click me
+  </Button>
+</Playground>
+
+## Square Disabled
+
+<Playground style={{ backgroundColor: '#2d3136', padding: '20px' }}>
+  <Button displayType={ButtonStyleEnum.Square} disabled={true}>
+    Click me
+  </Button>
+</Playground>

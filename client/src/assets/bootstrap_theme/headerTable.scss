@@ -1,0 +1,35 @@
+@import './import/variables/index';
+
+.header-table {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header-table__column {
+  width: 100%;
+  @media (min-width: $tablet-breakpoint) {
+    width: 50%;
+  }
+}
+
+.header-table__column__row {
+  display: flex;
+  line-height: 1em;
+}
+
+.header-table__column__row--right-aln {
+  @media (min-width: $tablet-breakpoint) {
+    text-align: right;
+    justify-content: flex-end;
+    * {
+      text-align: right;
+    }
+  }
+}
+
+.header-table__column__row--hidden-md-6 {
+  display: none;
+  @media (min-width: $tablet-breakpoint) {
+    display: block;
+  }
+}

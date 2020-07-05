@@ -1,0 +1,13 @@
+type Production {
+    id: ID!
+    prod_line: Int!
+    prod_type: String!
+    city_id: ID!
+    order_id: ID!
+}
+
+input InputCreateProduction {
+    prod_line: Int!
+    prod_type: String!
+    city_id: ID!
+}

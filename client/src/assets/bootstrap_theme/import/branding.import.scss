@@ -1,0 +1,13 @@
+.branding-block {
+  display: flex;
+}
+
+.branding-block--vertical {
+  flex-direction: column;
+  align-items: center;
+}
+
+.branding-block .branding-block__icon {
+  width: 136px;
+  height: 136px;
+}

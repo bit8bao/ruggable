@@ -1,0 +1,46 @@
+@import '../../../../../assets/scss/config';
+
+.wrapper {
+  color: $grey-200;
+  display: flex;
+  font-size: font-size($font-size-regular);
+  font-weight: $font-weight-regular;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  .listItem {
+    background-color: transparent;
+    border: none;
+    color: $grey-200;
+    padding: 6px 12px;
+    border-radius: 4px;
+
+    &:hover,
+    &:focus {
+      background-color: $grey-700;
+      color: $green-400;
+    }
+
+    &.active {
+      background-color: $blue-900;
+      color: $grey-200;
+    }
+
+    &:disabled {
+      color: $grey-200;
+      cursor: not-allowed;
+      background-color: transparent;
+    }
+  }
+
+  .skipToNext,
+  .skipToPrevious {
+    width: 34px;
+  }
+
+  .skipToLast,
+  .skipToFirst {
+    width: 43px;
+  }
+}

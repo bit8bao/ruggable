@@ -1,0 +1,40 @@
+@import '../../../scss/config';
+
+.note-editor.panel-default {
+  .panel-heading {
+    background-color: transparent;
+    border: none;
+  }
+
+  .note-editing-area .note-editable {
+    background-color: transparent;
+    color: $white;
+  }
+
+  &.note-frame {
+    border: none;
+
+    .note-statusbar {
+      background-color: $grey-700;
+    }
+  }
+
+  &.fullscreen {
+    background-color: $grey-700;
+
+    .panel-heading {
+      background-color: $grey-700;
+    }
+  }
+
+  .dropdown-menu.dropdown-style {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: $grey-900;
+    }
+  }
+}

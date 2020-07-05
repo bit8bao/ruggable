@@ -1,0 +1,23 @@
+@import '../../../../assets/scss/config';
+
+.wrapper {
+  display: flex;
+  position: relative;
+  font-size: font-size($font-size-x-small);
+}
+
+.leftLabel {
+  position: absolute;
+  top: 0;
+  transform-origin: 0 0;
+  transform: rotate(-90deg);
+  white-space: nowrap;
+}
+
+.charWrapper {
+  margin-left: 5px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}

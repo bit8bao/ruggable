@@ -1,0 +1,61 @@
+---
+name: PillButton
+menu: Buttons
+---
+
+import { Playground, Props } from 'docz';
+import Button, { ButtonStyleEnum } from './Button';
+
+# Pill Button
+
+## Properties
+
+<Props of={Button} />
+
+## Pill Default
+
+<Playground style={{ backgroundColor: '#2d3136', padding: '20px' }}>
+  <Button displayType={ButtonStyleEnum.Pill} onClick={() => alert('I was clicked')}>
+    Click me
+  </Button>
+</Playground>
+
+## Pill Active
+
+<Playground style={{ backgroundColor: '#2d3136', padding: '20px' }}>
+  <Button displayType={ButtonStyleEnum.Pill} isActive={true}>
+    Click me
+  </Button>
+</Playground>
+
+## Pill Alert
+
+<Playground style={{ backgroundColor: '#2d3136', padding: '20px' }}>
+  <Button displayType={ButtonStyleEnum.Pill} isAlert={true}>
+    Click me
+  </Button>
+</Playground>
+
+## Pill Alert Active
+
+<Playground style={{ backgroundColor: '#2d3136', padding: '20px' }}>
+  <Button displayType={ButtonStyleEnum.Pill} isAlert={true} isActive={true}>
+    Click me
+  </Button>
+</Playground>
+
+## Pill Form Submit
+
+<Playground style={{ backgroundColor: '#2d3136', padding: '20px' }}>
+  <Button displayType={ButtonStyleEnum.Pill} type="submit">
+    Click me
+  </Button>
+</Playground>
+
+## Pill Disabled
+
+<Playground style={{ backgroundColor: '#2d3136', padding: '20px' }}>
+  <Button displayType={ButtonStyleEnum.Pill} disabled={true}>
+    Click me
+  </Button>
+</Playground>

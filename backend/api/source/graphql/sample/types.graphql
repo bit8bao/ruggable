@@ -1,0 +1,13 @@
+type Sample {
+    id: ID!
+    key: String!
+    value: String!
+    rug_id: String!
+    line_id: String!
+    order_id: String!
+}
+
+input InputCreateSample{
+    key: String!
+    value: String!
+}

@@ -1,0 +1,33 @@
+@import './import/mixins/index';
+@import '../scss/config';
+
+.breadcrumb {
+  padding: 0px;
+  list-style: none;
+  background-color: transparent;
+  margin-bottom: 0px;
+  border-radius: 0px;
+  line-height: 1em;
+}
+
+.breadcrumb li,
+.breadcrumb li a {
+  @include caption1();
+  line-height: 1em;
+  text-transform: none;
+}
+
+.breadcrumb > li + li:before {
+  padding: 0 5px;
+  font-weight: 300;
+  font-family: 'stroke';
+  content: '\e603';
+}
+
+.breadcrumb a:hover {
+  color: $white;
+}
+
+.breadcrumb li.active {
+  color: $green-400;
+}

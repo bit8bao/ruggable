@@ -1,0 +1,20 @@
+# docker-compose.yml
+version: "3"
+
+services:
+  # inventoryapi:
+  #   container_name: inventoryapi
+  #   build:
+  #     context: ./api/
+  #     dockerfile: Dockerfile.test
+  #   command: dockerize -wait tcp://postgres:5432 -timeout 1m bash docker.run.test.sh
+  #   ports:
+  #     - "4001:4001"
+  postgres:
+    image: postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: core
+    ports:
+      - "5432:5432"

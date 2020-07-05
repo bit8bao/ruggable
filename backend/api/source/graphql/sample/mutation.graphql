@@ -1,0 +1,3 @@
+extend type Mutation{
+    createSample(input: InputCreateSample) : Sample!
+}

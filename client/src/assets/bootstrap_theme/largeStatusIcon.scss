@@ -1,0 +1,101 @@
+@import '../scss/config';
+
+.largeStatusIcon {
+  width: 48px;
+  height: 48px;
+  text-align: center;
+  border: 1px solid;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  i {
+    font-size: 16px;
+  }
+
+  &[title='In Progress'] {
+    i {
+      font-size: 8px;
+    }
+
+    color: $white;
+    border-color: $green-400;
+    background: fade_out($green-400, 0.75);
+  }
+
+  &[title='On Hold'],
+  &[title='OnHold'] {
+    i {
+      font-size: 8px;
+    }
+
+    color: $grey-200;
+    border-color: $grey-300;
+    background: fade_out($grey-300, 0.75);
+  }
+
+  &[title='Created'] {
+    color: transparent;
+    border-color: $grey-300;
+    background: fade_out($grey-300, 0.75);
+  }
+
+  &[title='Canceled'] {
+    color: $grey-200;
+    border-color: $red-500;
+    background: fade_out($red-500, 0.75);
+  }
+
+  &[title='Complete'] {
+    color: $white;
+    border-color: $blue-500;
+    background: fade_out($blue-500, 0.75);
+  }
+}
+
+.setupStatusIcons {
+  width: $base-vertical-rhythm;
+  height: $base-vertical-rhythm;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid;
+  margin-top: 6px;
+  margin-right: 5px;
+
+  & i {
+    font-size: 16px;
+  }
+
+  &[title='play'] {
+    border-width: 3px 0px 3px 6px;
+    border-color: transparent transparent transparent $green-400;
+  }
+
+  &[title='pause'] {
+    width: 4px;
+    height: 4px;
+    border-color: $red-500;
+    border-width: 3px;
+  }
+
+  &[title='complete'] {
+    display: inline-block;
+    /*Add another block-level blank space*/
+    display: block;
+
+    /*Make it a small rectangle so the border will create an L-shape*/
+    width: 3px;
+    height: 8px;
+
+    /*Add a white border on the bottom and left, creating that 'L' */
+    border: solid $green-400;
+    border-width: 0 2px 2px 0;
+
+    /*Rotate the L 45 degrees to turn it into a checkmark*/
+    transform: rotate(45deg);
+    border-color: $green-400;
+  }
+}

@@ -1,0 +1,19 @@
+@import '../../../../assets/scss/config';
+
+.wrapper {
+  background-color: $grey-700;
+  border-radius: 3px;
+  color: $white;
+}
+
+.smallPadding {
+  padding: 0;
+}
+
+.mediumPadding {
+  padding: $base-vertical-rhythm * 2;
+}
+
+.largePadding {
+  padding: $base-vertical-rhythm * 4;
+}

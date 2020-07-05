@@ -1,0 +1,57 @@
+@mixin utl-display_inline() {
+  display: inline-block;
+}
+
+@mixin utl-display_flex() {
+  display: flex;
+}
+
+@mixin utl-display_flexColumn() {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin utl-display_splitWide() {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin utl-display_evenly() {
+  display: flex;
+  justify-content: space-around;
+}
+
+@mixin utl-display_flexReverse() {
+  display: flex;
+  flex-flow: row-reverse;
+}
+
+@mixin utl-display_flexWrap() {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@mixin utl-display_center() {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin utl-display_flexCentered() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin utl-display_flexEnd() {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@mixin utl-txt_aln_right() {
+  text-align: right;
+}
+
+@mixin utl-vertical_center() {
+  display: flex;
+  align-items: center;
+}

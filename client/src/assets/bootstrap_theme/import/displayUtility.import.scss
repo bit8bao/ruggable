@@ -1,0 +1,43 @@
+.utl-display_inline {
+  @include utl-display_inline();
+}
+
+.utl-display_flex {
+  @include utl-display_flex();
+}
+
+.utl-display_flexColumn {
+  @include utl-display_flexColumn();
+}
+
+.utl-display_splitWide {
+  @include utl-display_splitWide();
+}
+
+.utl-display_evenly {
+  @include utl-display_evenly();
+}
+
+.utl-display_flexReverse {
+  @include utl-display_flexReverse();
+}
+
+.utl-display_flexWrap {
+  @include utl-display_flexWrap();
+}
+
+.utl-display_center {
+  @include utl-display_center();
+}
+
+.utl-display_flexEnd {
+  @include utl-display_flexEnd();
+}
+
+.utl-txt_aln_right {
+  @include utl-txt_aln_right();
+}
+
+.utl-vertical_center {
+  @include utl-vertical_center();
+}

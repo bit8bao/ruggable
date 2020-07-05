@@ -1,0 +1,23 @@
+{
+  "extends": ["tslint:latest", "tslint-config-prettier"],
+  "jsRules": {},
+  "rules": {
+    "radix": false,
+    "array-type": [true, "array"],
+    "no-console": [false],
+    "only-arrow-functions": [
+      true,
+      "allow-declarations",
+      "allow-named-functions"
+    ],
+    "triple-equals": [true, "allow-null-check"],
+    "member-access": false,
+    "object-literal-sort-keys": false,
+    "ordered-imports": false,
+    "interface-name": false,
+    "no-submodule-imports": false,
+    "no-implicit-dependencies": false,
+    "variable-name": false
+  },
+  "rulesDirectory": []
+}

@@ -1,0 +1,64 @@
+---
+name: Text
+---
+
+import { Playground, Props } from 'docz';
+import Text from './Text';
+
+# Text
+
+## Properties
+
+<Props of={Text} />
+
+## Titles
+
+<Playground style={{ backgroundColor: '#2d3136', padding: '20px' }}>
+  <Text size={TextSizeEnum.Title1}>Cat jump over the moon</Text>
+  <Text size={TextSizeEnum.Title2}>Cat jump over the moon</Text>
+  <Text size={TextSizeEnum.Title3}>Cat jump over the moon</Text>
+  <Text size={TextSizeEnum.Headline}>Cat jump over the moon</Text>
+  <Text size={TextSizeEnum.Subhead}>Cat jump over the moon</Text>
+</Playground>
+
+## Body
+
+<Playground style={{ backgroundColor: '#2d3136', padding: '20px' }}>
+  <Text size="body1">Cat jump over the moon</Text>
+</Playground>
+
+## Callout
+
+<Playground style={{ backgroundColor: '#2d3136', padding: '20px' }}>
+  <Text size="callout">Cat jump over the moon</Text>
+</Playground>
+
+## Footnote
+
+<Playground style={{ backgroundColor: '#2d3136', padding: '20px' }}>
+  <Text size={TextSizeEnum.Footnote1}>Cat jump over the moon</Text>
+  <Text size={TextSizeEnum.Footnote2}>Cat jump over the moon</Text>
+</Playground>
+
+## Captions
+
+<Playground style={{ backgroundColor: '#2d3136', padding: '20px' }}>
+  <Text size={TextSizeEnum.Caption1} isUppercase={true}>
+    Cat jump over the moon
+  </Text>
+  <Text size={TextSizeEnum.Caption2}>Cat jump over the moon</Text>
+</Playground>
+
+## Instructions
+
+<Playground style={{ backgroundColor: '#2d3136', padding: '20px' }}>
+  <Text size={TextSizeEnum.Instruction1}>Cat jump over the moon</Text>
+</Playground>
+
+## Fully Loaded
+
+<Playground style={{ backgroundColor: '#2d3136', padding: '20px' }}>
+  <Text size={TextSizeEnum.Title1} element="label" className="some-class">
+    Cat jump over the moon
+  </Text>
+</Playground>

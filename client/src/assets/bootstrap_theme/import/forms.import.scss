@@ -1,0 +1,191 @@
+@import '../../scss/config';
+
+.form-group {
+  margin-bottom: $base-vertical-rhythm * 4;
+
+  &.last-inputs {
+    margin-bottom: $base-vertical-rhythm * 10;
+  }
+
+  &.button-inputs {
+    margin-bottom: 0;
+  }
+
+  &.centered-inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+
+    .btn {
+      min-width: 240px;
+      margin-bottom: $base-vertical-rhythm * 2;
+    }
+  }
+}
+
+.form-control {
+  color: $white;
+  border: none;
+  border-radius: 4px;
+  box-shadow: none;
+  transition: none;
+  background-color: lighten($grey-600, 2%);
+
+  &[type='text'],
+  &[type='email'],
+  &[type='number'],
+  &[type='date'],
+  &[type='datetime-local'],
+  &[type='password'] {
+    border-radius: 0;
+    border-bottom: 2px $grey-400 solid;
+    background-color: transparent;
+    padding: 8px 16px;
+    caret-color: $green-500;
+  }
+
+  &.valid {
+    border-color: $green-500;
+
+    & + .input-group-addon_icn {
+      border-color: $green-500;
+    }
+  }
+
+  &.input-validation-error {
+    border-color: $red-500;
+
+    & + .input-group-addon_icn {
+      border-color: $red-500;
+    }
+  }
+
+  &:focus {
+    box-shadow: none;
+    background-color: $grey-500;
+    border-color: $grey-400;
+
+    & + .input-group-addon_icn {
+      box-shadow: none;
+      background-color: $grey-500;
+      border-color: $grey-400;
+    }
+  }
+
+  &::placeholder {
+    color: $grey-200;
+  }
+}
+
+.search {
+  background: $grey-700;
+
+  & .navbar-form {
+    padding: 4px 0;
+  }
+
+  & .navbar-form input.form-control {
+    &:focus {
+      background-color: transparent;
+    }
+  }
+}
+
+.table > tbody > tr > td .form-control {
+  padding: $base-vertical-rhythm $base-vertical-rhythm / 2;
+}
+
+.form-control[type='text'] {
+  &:focus {
+    box-shadow: none;
+    background-color: $grey-500;
+  }
+}
+
+.form-control[disabled],
+.form-control[readonly],
+fieldset[disabled] .form-control {
+  background-color: darken($grey-600, 10%);
+  opacity: 1;
+}
+
+.has-success .checkbox,
+.has-success .checkbox-inline,
+.has-success .control-label,
+.has-success .help-block,
+.has-success .radio,
+.has-success .radio-inline,
+.has-success.checkbox label,
+.has-success.checkbox-inline label,
+.has-success.radio label,
+.has-success.radio-inline label {
+  color: darken($green-500, 10%);
+}
+
+.has-warning .checkbox,
+.has-warning .checkbox-inline,
+.has-warning .control-label,
+.has-warning .help-block,
+.has-warning .radio,
+.has-warning .radio-inline,
+.has-warning.checkbox label,
+.has-warning.checkbox-inline label,
+.has-warning.radio label,
+.has-warning.radio-inline label {
+  color: darken($orange-500, 10%);
+}
+
+.has-error .checkbox,
+.has-error .checkbox-inline,
+.has-error .control-label,
+.has-error .help-block,
+.has-error .radio,
+.has-error .radio-inline,
+.has-error.checkbox label,
+.has-error.checkbox-inline label,
+.has-error.radio label,
+.has-error.radio-inline label {
+  color: darken($red-500, 10%);
+}
+
+.has-success .form-control {
+  border-color: darken($green-500, 10%);
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: none !important;
+}
+
+.has-warning .form-control {
+  border-color: darken($orange-500, 10%);
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: none !important;
+}
+
+.has-error .form-control {
+  border-color: darken($red-500, 10%);
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: none !important;
+}
+
+.input-group .form-control:last-child,
+.input-group-addon:last-child,
+.input-group-btn:last-child > .btn,
+.input-group-btn:last-child > .btn-group > .btn,
+.input-group-btn:last-child > .dropdown-toggle,
+.input-group-btn:first-child > .btn:not(:first-child),
+.input-group-btn:first-child > .btn-group:not(:first-child) > .btn {
+  border-color: transparent;
+  background-color: lighten($grey-600, 6%);
+}
+
+.input-group .input-group-addon_icn {
+  color: $grey-200;
+  border: none;
+  border-radius: 0;
+  border-bottom: 2px $grey-400 solid;
+  padding: 8px;
+  background: transparent;
+}

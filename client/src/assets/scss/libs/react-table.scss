@@ -1,0 +1,23 @@
+//TODO: Create Global - Edge & IE11 Support
+/**
+  Edge Support - word wrap
+**/
+@supports (-ms-ime-align: auto) {
+  .wrapBreak {
+    word-break: break-all;
+  }
+}
+
+/**
+  IE11 Support
+**/
+_:-ms-fullscreen,
+:root .maxCell300 {
+  display: table-cell;
+  max-width: 300px;
+}
+
+.wrapBreak {
+  word-break: break-word;
+  word-wrap: break-word;
+}

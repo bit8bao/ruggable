@@ -1,0 +1,15 @@
+.tabHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tabHeader .btn-sm {
+  max-height: 36px;
+  max-width: 50%;
+}
+
+@media all and (max-width: 768px) {
+  .tabHeader {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,10 @@
+overwrite: true
+schema: "source/**/*.graphql"
+generates:
+  ./types.d.ts:
+    config:
+      federation: true
+    plugins:
+      - typescript
+      - typescript-resolvers
+    optionalType: undefined | null

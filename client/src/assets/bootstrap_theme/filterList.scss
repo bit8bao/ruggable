@@ -1,0 +1,15 @@
+@import '../scss/config';
+
+.filterList {
+  display: flex;
+  align-items: center;
+}
+
+.filterList > span {
+  margin-right: $base-vertical-rhythm * 3;
+
+  &:nth-of-type(1) {
+    border-left: 1px solid;
+    padding-left: $base-vertical-rhythm * 3;
+  }
+}

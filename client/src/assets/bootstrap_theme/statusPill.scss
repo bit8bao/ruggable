@@ -1,0 +1,158 @@
+@import './import/mixins/index';
+@import '../scss/config';
+
+// STATUSES:
+// - Complete
+// - Working
+// - InProgress
+// - In Progress
+// - Waiting
+// - OnHold
+// - On Hold
+// - NotStarted
+// - Created
+// - Canceled
+// - Cancelled
+
+.statusPill {
+  min-width: 116px;
+  @include caption2();
+}
+
+.statusPill > * {
+  vertical-align: middle;
+}
+
+.statusPill i {
+  font-size: 6px;
+  padding: 8px;
+  border: 1px solid;
+  border-radius: 13px;
+}
+
+.statusPill--square i {
+  border-radius: 2px;
+}
+
+.statusPill span {
+  padding-left: 8px;
+  line-height: 1;
+}
+
+.statusPill[title='Client'] i {
+  max-width: 50px;
+}
+
+.statusPill[title='Client'] i {
+  font-size: 6px;
+  padding: 20px;
+  border: 1px solid;
+  border-radius: 8px;
+}
+
+.statusPill[title='Complete'] {
+  color: $white;
+
+  & i {
+    font-size: 8px;
+    padding: 7px;
+    border-color: $blue-500;
+    background: fade_out($blue-500, 0.75);
+  }
+}
+
+.statusPill[id='customer'] {
+  margin-right: -3 * $base-vertical-rhythm;
+  & i {
+    padding: 25px !important;
+  }
+}
+
+.statusPill[title='Working'],
+.statusPill[title='InProgress'],
+.statusPill[title='In Progress'],
+.statusPill[title='Client'] {
+  color: $white;
+
+  & i {
+    border-color: $green-400;
+    background: fade_out($green-400, 0.75);
+  }
+}
+
+.statusPill[title='Waiting'] {
+  color: $grey-200;
+
+  & i {
+    color: $grey-300;
+    border-color: $blue-500;
+    background: fade_out($blue-500, 0.75);
+  }
+}
+
+.statusPill[title='OnHold'],
+.statusPill[title='On Hold'] {
+  color: $grey-200;
+
+  & i {
+    color: $grey-300;
+    border-color: $grey-300;
+    background: fade_out($grey-300, 0.75);
+  }
+}
+
+.statusPill[title='Created'] {
+  color: $grey-200;
+
+  & i {
+    color: transparent;
+    border-color: $grey-300;
+    background: transparent;
+  }
+}
+
+.statusPill[title='NotStarted'] {
+  color: $grey-200;
+
+  & i {
+    color: $grey-200;
+    border-color: $grey-200;
+    background: fade_out($grey-200, 0.75);
+  }
+}
+
+.statusPill[title='Canceled'],
+.statusPill[title='Cancelled'] {
+  color: $grey-200;
+
+  & i {
+    color: $grey-200;
+    border-color: $red-500;
+    background: fade_out($red-500, 0.75);
+    padding: 6px 7px;
+    font-size: 6px;
+  }
+}
+
+.statusPill--small[title='Canceled'] i,
+.statusPill--small[title='Cancelled'] i,
+.statusPill--small[title='NotStarted'] i,
+.statusPill--small[title='Created'] i {
+  padding: 7px;
+  font-size: 0;
+}
+
+.statusPill--small[title='Waiting'] i,
+.statusPill--small[title='Working'] i,
+.statusPill--small[title='InProgress'] i,
+.statusPill--small[title='In Progress'] i,
+.statusPill--small[title='On Hold'] i,
+.statusPill--small[title='OnHold'] i {
+  font-size: 4px;
+  padding: 5px;
+}
+
+.statusPill--small[title='Complete'] i {
+  font-size: 6px;
+  padding: 4px;
+}

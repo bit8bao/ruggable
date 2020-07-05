@@ -1,0 +1,234 @@
+@import './mixins/index';
+@import '../../scss/config';
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $grey-900;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3 {
+  margin-top: 10px;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+
+.no-line-height {
+  line-height: 1em;
+}
+
+h1,
+.h1 {
+  @include typography-variant(32px, 300, $grey-900);
+}
+
+h2,
+.h2 {
+  @include typography-variant(26px, 300, $grey-900);
+}
+
+h3,
+.h3 {
+  @include typography-variant(20px, 300, $grey-700);
+}
+
+.bodyText {
+  @include typography-variant(16px, 300, $grey-900);
+}
+
+.headline {
+  @include typography-variant(18px, 400, $grey-900);
+}
+
+.subhead {
+  @include typography-variant(16px, 400, $grey-700);
+}
+
+.chartNumber {
+  @include typography-variant(48px, 300, $grey-700);
+}
+
+.callout {
+  @include typography-variant(16px, 400, $green-600);
+  text-transform: uppercase;
+}
+
+.formFieldInstruction {
+  @include typography-variant(12px, 400, $grey-900);
+  font-style: italic;
+}
+
+.footnote {
+  @include typography-variant(14px, 400, $grey-700);
+}
+
+.caption1 {
+  @include typography-variant(12px, 400, $grey-700);
+}
+
+.caption2 {
+  @include caption2();
+}
+
+.c-accent {
+  color: $green-500;
+}
+
+.c-white {
+  color: $grey-900;
+}
+
+.c-gray {
+  color: $grey-200;
+}
+
+.c-text {
+  color: $grey-900;
+}
+
+.txt-transform-none {
+  text-transform: none;
+}
+
+.txt-italic {
+  font-style: italic;
+}
+
+.txt-14px {
+  font-size: 14px;
+}
+
+.txt-16px {
+  font-size: 16px;
+}
+
+.txt-18px {
+  font-size: 18px;
+}
+
+.txt-24px {
+  font-size: 24px;
+}
+
+.txt-28px {
+  font-size: 28px;
+}
+
+.txt-38px {
+  font-size: 38px;
+}
+
+.txt-48px {
+  font-size: 48px;
+}
+
+.txt-64px {
+  font-size: 64px;
+}
+
+.txt-aln-right {
+  text-align: right;
+}
+
+.txt-aln-center {
+  text-align: center;
+}
+
+.txt-disabled {
+  color: $grey-300;
+  cursor: default;
+}
+
+.txt-ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.font-normal {
+  font-weight: 400;
+}
+
+.font-bold {
+  font-weight: 600;
+}
+
+.font-extra-bold {
+  font-weight: 700;
+}
+
+h1 small,
+h2 small,
+h3 small,
+h4 small,
+h5 small,
+h6 small,
+.h1 small,
+.h2 small,
+.h3 small,
+.h4 small,
+.h5 small,
+.h6 small,
+h1 .small,
+h2 .small,
+h3 .small,
+h4 .small,
+h5 .small,
+h6 .small,
+.h1 .small,
+.h2 .small,
+.h3 .small,
+.h4 .small,
+.h5 .small,
+.h6 .small {
+  color: lighten($white, 6%);
+}
+
+.label-default {
+  background-color: $grey-600;
+}
+
+.label-primary {
+  background-color: $green-500;
+}
+
+.label-success {
+  background-color: $green-500;
+}
+
+.label-info {
+  background-color: $orange-500;
+}
+
+.label-warning {
+  background-color: $orange-500;
+}
+
+.label-danger {
+  background-color: $red-500;
+}
+
+.badge {
+  background-color: transparent;
+  border: 1px solid $grey-600;
+  font-weight: 300;
+  color: lighten($grey-600, 40%);
+}

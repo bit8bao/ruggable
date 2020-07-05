@@ -1,0 +1,14 @@
+@import '../../../../../assets/scss/config';
+
+.gaugeChart {
+  height: 250px;
+  background: $grey-600;
+  border-radius: 3px;
+}
+
+.gaugeChart_text {
+  width: 250px;
+  position: relative;
+  top: -120px;
+  text-align: center;
+}

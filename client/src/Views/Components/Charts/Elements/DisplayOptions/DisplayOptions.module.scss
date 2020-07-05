@@ -1,0 +1,23 @@
+@import '../../../../../assets/scss/config';
+
+.displayOptions {
+  margin-bottom: $base-vertical-rhythm * 3;
+  button {
+    margin: 0 5px;
+    padding: 5px $base-vertical-rhythm * 2;
+    border: 0;
+    &:hover,
+    &:focus,
+    &:active,
+    &.active-chart-btn {
+      color: $green-400;
+      background: $grey-500;
+      text-decoration: none;
+    }
+  }
+}
+
+.displayOptions__notShown {
+  width: 100%;
+  height: 32px;
+}

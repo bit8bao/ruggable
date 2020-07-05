@@ -1,0 +1,13 @@
+@import '../../../assets/scss/config';
+
+.wrapper {
+  display: block;
+}
+
+.top {
+  border-bottom: 1px solid black;
+}
+
+.bottom {
+  border-bottom: 1px solid $grey-500;
+}
