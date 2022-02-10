@@ -43,7 +43,7 @@
     "jw-paginate": "^1.0.4",
     "lodash": "^4.17.15",
     "moments": "0.0.2",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "npm-run-all": "^4.1.5",
     "react": "^16.13.1",
     "react-app-rewire-hot-loader-for-customize-cra": "^1.0.1",
